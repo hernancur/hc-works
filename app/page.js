@@ -1,9 +1,12 @@
-import Image from "next/image";
+import React from "react";
+import FrontPage from "@/app/FrontPage/page";
 
-export default function Home() {
+function page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      My website
-    </main>
+    <div className="max-w-5xl mx-auto  px-10">
+      <FrontPage />
+    </div>
   );
 }
+
+export default page;

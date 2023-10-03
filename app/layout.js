@@ -1,7 +1,7 @@
+import Theming from "@/Theme/Theming";
 import "./globals.css";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Header from "@/app/Header/page";
+import Footer from "@/app/Footer/page";
 
 export const metadata = {
   title: "hernancur",
@@ -11,7 +11,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <Theming>
+          <Header />
+          {children}
+          <Footer />
+        </Theming>
+      </body>
     </html>
   );
 }
