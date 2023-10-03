@@ -10,6 +10,7 @@ import { HeaderLinks } from "../utils/constants";
 
 function Headpage() {
   let mouseX = useMotionValue(Infinity);
+  const [clicked, setClicked] = useState(false);
 
   return (
     <div>
@@ -23,6 +24,7 @@ function Headpage() {
             return (
               <div key={i}>
                 <AppIcon
+                  setClicked={setClicked}
                   href={link.href}
                   rel={link.target === "_blank" ? "noopener noreferrer" : ""}
                   target={link.target || null}
@@ -45,7 +47,10 @@ function Headpage() {
 
 export default Headpage;
 
-function AppIcon({ mouseX, imgs, href }) {
+function AppIcon({ mouseX, imgs, href, setClicked }) {
+  const handleClick = () => {
+    setClicked(true); // Se marca como clicado
+  };
   let ref = useRef();
 
   let distance = useTransform(mouseX, (val) => {
@@ -62,6 +67,7 @@ function AppIcon({ mouseX, imgs, href }) {
       <motion.div
         ref={ref}
         style={{ width }}
+        onClick={handleClick}
         className="z-30 flex items-center  justify-center rounded-full  border border-neutral-400/20 dark:border-neutral-700 dark:bg-neutral-900/70 cursor-pointer aspect-square "
       >
         <span className="text-3xl">{imgs}</span>
