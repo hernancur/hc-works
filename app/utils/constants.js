@@ -60,3 +60,50 @@ export let linkFrontPage = [
       "I focused on visual and interaction design for the product, crafting compelling narratives. My responsibilities included creating interactive features that enriched user experiences on both the app and website.",
   },
 ];
+
+import {
+  PiHouseThin,
+  PiGithubLogoThin,
+  PiTwitterLogoThin,
+  PiCodeThin,
+  PiAddressBookThin,
+} from "react-icons/pi";
+import { GoPaperclip } from "react-icons/go";
+
+export const HeaderLinks = [
+  {
+    href: "/",
+    label: "Inicio",
+    Icon: <PiHouseThin />,
+  },
+  {
+    href: "/about",
+    label: "About",
+    Icon: <PiAddressBookThin />,
+  },
+
+  {
+    href: "/project",
+    label: "project",
+    Icon: <PiCodeThin />,
+  },
+  // {
+  //   href: "https://github.com/hernancur",
+  //   label: "GitHub",
+  //   target: "_blank",
+  //   Icon: <PiGithubLogoThin />,
+  //   rel: "noopener noreferrer",
+  // },
+  // {
+  //   href: "https://twitter.com/hernancur",
+  //   label: "GitHub",
+  //   target: "_blank",
+  //   Icon: <PiTwitterLogoThin />,
+  //   rel: "noopener noreferrer",
+  // },
+  {
+    href: "/experience",
+    label: "experience",
+    Icon: <GoPaperclip />,
+  },
+];

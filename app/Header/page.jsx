@@ -1,59 +1,12 @@
 "use client";
 
-import { GoPaperclip } from "react-icons/go";
 import { useRef, useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 
-import {
-  PiHouseThin,
-  PiSunThin,
-  PiMoonLight,
-  PiGithubLogoThin,
-  PiTwitterLogoThin,
-  PiCodeThin,
-  PiAddressBookThin,
-} from "react-icons/pi";
-
+import { PiSunThin, PiMoonLight } from "react-icons/pi";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-
-export const generalLinks = [
-  {
-    href: "/",
-    label: "Inicio",
-    Icon: <PiHouseThin />,
-  },
-  {
-    href: "/about",
-    label: "About",
-    Icon: <PiAddressBookThin />,
-  },
-
-  {
-    href: "/project",
-    label: "project",
-    Icon: <PiCodeThin />,
-  },
-  // {
-  //   href: "https://github.com/hernancur",
-  //   label: "GitHub",
-  //   target: "_blank",
-  //   Icon: <PiGithubLogoThin />,
-  //   rel: "noopener noreferrer",
-  // },
-  // {
-  //   href: "https://twitter.com/hernancur",
-  //   label: "GitHub",
-  //   target: "_blank",
-  //   Icon: <PiTwitterLogoThin />,
-  //   rel: "noopener noreferrer",
-  // },
-  {
-    href: "/experience",
-    label: "experience",
-    Icon: <GoPaperclip />,
-  },
-];
+import { HeaderLinks } from "../utils/constants";
 
 function Headpage() {
   let mouseX = useMotionValue(Infinity);
@@ -66,7 +19,7 @@ function Headpage() {
         className="  fixed z-50 flex bottom-8 left-1/2 -translate-x-1/2 "
       >
         <div className="flex items-end h-16 gap-4 px-4 pb-2.5 mx-auto outline-0 rounded-2xl box-gen ring-1 backdrop-blur-md dark:ring-[#1a1a1a] ">
-          {generalLinks.map((link, i) => {
+          {HeaderLinks.map((link, i) => {
             return (
               <div key={i}>
                 <AppIcon
