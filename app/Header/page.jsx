@@ -1,13 +1,9 @@
 "use client";
-import {
-  MotionValue,
-  motion,
-  useMotionValue,
-  useSpring,
-  useTransform,
-} from "framer-motion";
+
+import { GoPaperclip } from "react-icons/go";
 import { useRef, useState, useEffect } from "react";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 import {
   PiHouseThin,
@@ -16,11 +12,10 @@ import {
   PiGithubLogoThin,
   PiTwitterLogoThin,
   PiCodeThin,
-  PiAddressBookThin
+  PiAddressBookThin,
 } from "react-icons/pi";
-import { GoPerson } from "react-icons/go";
-import { GoPaperclip } from "react-icons/go";
-import Link from "next/link";
+
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 export const generalLinks = [
   {
@@ -44,17 +39,18 @@ export const generalLinks = [
     label: "GitHub",
     target: "_blank",
     Icon: <PiGithubLogoThin />,
+    rel: "noopener noreferrer",
   },
   {
     href: "https://twitter.com/hernancur",
     label: "GitHub",
     target: "_blank",
     Icon: <PiTwitterLogoThin />,
+    rel: "noopener noreferrer",
   },
   {
     href: "/experience",
     label: "experience",
-    target: "_blank",
     Icon: <GoPaperclip />,
   },
 ];
@@ -76,7 +72,7 @@ function Headpage() {
                 <AppIcon
                   href={link.href}
                   rel={link.target === "_blank" ? "noopener noreferrer" : ""}
-                  target={link.target}
+                  target={link.target || null}
                   aria-label={link.label}
                   outline={link.outline}
                   mouseX={mouseX}
@@ -96,7 +92,7 @@ function Headpage() {
 
 export default Headpage;
 
-function AppIcon({ mouseX, imgs, href }) {
+function AppIcon({ mouseX, imgs, href}) {
   let ref = useRef();
 
   let distance = useTransform(mouseX, (val) => {

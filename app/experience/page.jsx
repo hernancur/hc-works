@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 let link = [
   {
     date: "Dec 2022 - Apr 2023",
-    imgLink: "/img/img6.jpg",
+    imgLink: "https://i.ibb.co/J7YPxbG/img6.jpg",
     title: "Product Design Intern",
     sub: "Avalon Scenes",
     subTitle:
@@ -18,7 +18,7 @@ let link = [
   },
   {
     date: "Jul 2022 - Sep 2022",
-    imgLink: "/img/img3.jpg",
+    imgLink: "https://i.ibb.co/J7YPxbG/img6.jpg",
     title: "Designer in Residence",
     sub: "10kdesigners",
     subTitle:
@@ -27,7 +27,7 @@ let link = [
 
   {
     date: "Jan 2022 - Mar 2022",
-    imgLink: "/img/img2.jpg",
+    imgLink: "https://i.ibb.co/J7YPxbG/img6.jpg",
     title: "Product Design Intern",
     sub: "Dive",
     subTitle:
@@ -35,7 +35,7 @@ let link = [
   },
   {
     date: "Sep 2021 - Dec 2021 ",
-    imgLink: "/img/img2.jpg",
+    imgLink: "https://i.ibb.co/J7YPxbG/img6.jpg",
     title: "Product Design Intern",
     sub: "Winuall",
     subTitle:

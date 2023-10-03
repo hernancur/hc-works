@@ -1,6 +1,9 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React from "react";
+import CustomCarousel from "./Carousel/Custom";
+import { aboutImgs } from "../utils/constants";
 import { TbArrowBackUp, TbBrandVscode } from "react-icons/tb";
 import {
   SiNotion,
@@ -28,20 +31,17 @@ function Aboutpage() {
         </div>
 
         <div className="mt-10">
-          <img
-            style={{ width: "100%", height: "384px" }}
-            className="w-full h-96 rounded-lg object-cover"
-            src="https://i.ibb.co/R6DPtss/M395193-top.jpg"
-            alt="fullstack developer latam"
-            border="0"
-          />
+          <div style={{ width: "100%" }}>
+            <CustomCarousel images={aboutImgs} />
+          </div>
+
           <h4 className="my-11 font-InterBold">About me</h4>
 
           <p className="my-9">
-            Passionate about Formula 1, sports and reading.
-            Exploring new places, cultures, and meeting
-            people is something I find super enjoyable.
-            In my free time I like spending time with family and friends.
+            Passionate about Formula 1, sports and reading. Exploring new
+            places, cultures, and meeting people is something I find super
+            enjoyable. In my free time I like spending time with family and
+            friends.
           </p>
 
           <h4 className="my-11 font-InterBold">How it all started</h4>

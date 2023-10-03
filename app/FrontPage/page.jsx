@@ -8,65 +8,12 @@ import { PiLockThin } from "react-icons/pi";
 import Image from "next/image";
 
 import { motion } from "framer-motion";
+import { projectsFrontPage, linkFrontPage } from "../utils/constants";
 
-const projects = [
-  {
-    imgLink: "/img/img1.jpg",
-    title: "UI/ UX Case Study: Group Food Ordering",
-    subT: "Designed an solution that simplifies the decision-making process and saves time for users while ordering food in a group.",
-  },
-  {
-    imgLink: "/img/img2.jpg",
-    title:
-      "UI/ UX Case Study: Enabling local stores to sell on WhatsApp for Businesses",
-    subT: "Designed a feature that simplifies local store sales on WhatsApp for businesses..",
-  },
-  {
-    imgLink: "/img/img3.jpg",
-    title: "Creating Dive platform's Trivia Game",
-    subT: "Designed a trivia game to enhance user engagement during sessions on Dive platform.",
-  },
-];
 
-let link = [
-  {
-    date: "Dec 2022 - Apr 2023",
-    imgLink: "/img/img6.jpg",
-    title: "Product Design Intern",
-    sub: "Avalon Scenes",
-    subTitle:
-      "At Scenes, we were building an all-in-one community platform that enables creators to connect & manage their community better.",
-    bttn: "View my work",
-  },
-  {
-    date: "Jul 2022 - Sep 2022",
-    imgLink: "/img/img3.jpg",
-    title: "Designer in Residence",
-    sub: "10kdesigners",
-    subTitle:
-      "Design cohort run by Abhinav Chikara (aka Abnux) and Jayneil Dayal, that empowers designers through mentorship and real-world projects.",
-  },
-
-  {
-    date: "Jan 2022 - Mar 2022",
-    imgLink: "/img/img2.jpg",
-    title: "Product Design Intern",
-    sub: "Dive",
-    subTitle:
-      "I built and facilitated engaging remote experiences, connecting colleagues at work. I designed various games, including 'Word Pirate,' which became one of the platform's most-played games within two weeks of launch.",
-  },
-  {
-    date: "Sep 2021 - Dec 2021 ",
-    imgLink: "/img/img2.jpg",
-    title: "Product Design Intern",
-    sub: "Winuall",
-    subTitle:
-      "I focused on visual and interaction design for the product, crafting compelling narratives. My responsibilities included creating interactive features that enriched user experiences on both the app and website.",
-  },
-];
 
 function Frpage() {
-  const [show, setShow] = useState(link[0]);
+  const [show, setShow] = useState(linkFrontPage[0]);
 
   return (
     <div className="mt-32">
@@ -133,7 +80,7 @@ function Frpage() {
       {/* Projects */}
 
       <div className="">
-        {projects.map((each, i) => (
+        {projectsFrontPage.map((each, i) => (
           <div key={i}>
             <div className="flex flex-col lg:flex-row  gap-x-8 my-6">
               <div className="h-60 w-full md:w-64 ">
@@ -204,7 +151,7 @@ function Frpage() {
 
       <div className="">
         <div className=" ">
-          {link.map((each) => (
+          {linkFrontPage.map((each) => (
             <div key={each.title} className="my-8  p-2 rounded-md ">
               <div className="border border-neutral-700 rounded-full  w-fit px-2 p-1 flex items-center ">
                 <span className="text-xs text-neutral-700 dark:text-neutral-300 ">
