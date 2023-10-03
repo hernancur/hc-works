@@ -34,20 +34,20 @@ export const generalLinks = [
     label: "project",
     Icon: <PiCodeThin />,
   },
-  {
-    href: "https://github.com/hernancur",
-    label: "GitHub",
-    target: "_blank",
-    Icon: <PiGithubLogoThin />,
-    rel: "noopener noreferrer",
-  },
-  {
-    href: "https://twitter.com/hernancur",
-    label: "GitHub",
-    target: "_blank",
-    Icon: <PiTwitterLogoThin />,
-    rel: "noopener noreferrer",
-  },
+  // {
+  //   href: "https://github.com/hernancur",
+  //   label: "GitHub",
+  //   target: "_blank",
+  //   Icon: <PiGithubLogoThin />,
+  //   rel: "noopener noreferrer",
+  // },
+  // {
+  //   href: "https://twitter.com/hernancur",
+  //   label: "GitHub",
+  //   target: "_blank",
+  //   Icon: <PiTwitterLogoThin />,
+  //   rel: "noopener noreferrer",
+  // },
   {
     href: "/experience",
     label: "experience",
@@ -92,7 +92,7 @@ function Headpage() {
 
 export default Headpage;
 
-function AppIcon({ mouseX, imgs, href}) {
+function AppIcon({ mouseX, imgs, href }) {
   let ref = useRef();
 
   let distance = useTransform(mouseX, (val) => {
