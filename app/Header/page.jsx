@@ -50,6 +50,9 @@ export default Headpage;
 function AppIcon({ mouseX, imgs, href, setClicked }) {
   const handleClick = () => {
     setClicked(true); // Se marca como clicado
+    setTimeout(() => {
+      setClicked(false);
+    }, 500);
   };
   let ref = useRef();
 
