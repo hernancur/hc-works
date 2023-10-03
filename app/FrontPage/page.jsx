@@ -10,8 +10,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { projectsFrontPage, linkFrontPage } from "../utils/constants";
 
-
-
 function Frpage() {
   const [show, setShow] = useState(linkFrontPage[0]);
 
@@ -27,10 +25,10 @@ function Frpage() {
         />
         <div>
           <h2 className="font-extrabold font-InterBlack dark:text-white text-3xl">
-            JoScriptt
+            Hernan Garcia
           </h2>
-          <Link href={"https://twitter.com/harshii04"}>
-            <span className="text-neutral-500 ">@ Jonaldo</span>
+          <Link href={"https://instagram.com/hernan.cur"}>
+            <span className="text-neutral-500 ">@hernan.cur</span>
           </Link>
           <Status isAvailbale />
         </div>

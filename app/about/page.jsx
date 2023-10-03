@@ -1,10 +1,5 @@
 "use client";
-/* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
-import React from "react";
-import CustomCarousel from "./Carousel/Custom";
-import { aboutImgs } from "../utils/constants";
-import { TbArrowBackUp, TbBrandVscode } from "react-icons/tb";
+
 import {
   SiNotion,
   SiAdobeaftereffects,
@@ -13,7 +8,11 @@ import {
   SiDiscord,
   SiGooglechrome,
 } from "react-icons/si";
-import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import CustomCarousel from "./Carousel/Custom";
+import { aboutImgs } from "../utils/constants";
+import { TbArrowBackUp } from "react-icons/tb";
 
 function Aboutpage() {
   return (
