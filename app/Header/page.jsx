@@ -24,6 +24,7 @@ function Headpage() {
             return (
               <div key={i}>
                 <AppIcon
+                  clicked={clicked}
                   setClicked={setClicked}
                   href={link.href}
                   rel={link.target === "_blank" ? "noopener noreferrer" : ""}
@@ -47,14 +48,25 @@ function Headpage() {
 
 export default Headpage;
 
-function AppIcon({ mouseX, imgs, href, setClicked }) {
+function AppIcon({ mouseX, imgs, href, clicked, setClicked }) {
+  let ref = useRef();
+
   const handleClick = () => {
     setClicked(true); // Se marca como clicado
     setTimeout(() => {
       setClicked(false);
     }, 500);
   };
-  let ref = useRef();
+
+  // Reemplaza onMouseLeave por onTouchStart
+  let onTouchStart = () => {
+    if (!clicked) {
+      setClicked(true);
+      setTimeout(() => {
+        setClicked(false);
+      }, 500);
+    }
+  };
 
   let distance = useTransform(mouseX, (val) => {
     let bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
@@ -71,7 +83,8 @@ function AppIcon({ mouseX, imgs, href, setClicked }) {
         ref={ref}
         style={{ width }}
         onClick={handleClick}
-        className="z-30 flex items-center  justify-center rounded-full  border border-neutral-400/20 dark:border-neutral-700 dark:bg-neutral-900/70 cursor-pointer aspect-square "
+        onTouchStart={onTouchStart}
+        className={`z-30 flex items-center justify-center rounded-full border border-neutral-400/20 dark:border-neutral-700 dark:bg-neutral-900/70 cursor-pointer aspect-square`}
       >
         <span className="text-3xl">{imgs}</span>
       </motion.div>
