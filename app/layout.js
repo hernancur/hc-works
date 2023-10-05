@@ -5,7 +5,6 @@ import Footer from "@/app/Footer/page";
 
 export const metadata = {
   title: "hernancur",
-  description: "Personal website",
 };
 
 export default function RootLayout({ children }) {

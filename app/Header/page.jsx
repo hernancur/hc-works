@@ -6,12 +6,16 @@ import ThemeToggleNav from "./ThemeToggleNav";
 
 export default function Headpage() {
   let mouseX = useMotionValue(Infinity);
+  function iconClick() {
+    mouseX.set(Infinity);
+  }
 
   return (
     <div>
       <motion.div
         onMouseMove={(e) => mouseX.set(e.pageX)}
         onMouseLeave={() => mouseX.set(Infinity)}
+        onClick={iconClick}
         className="fixed z-50 flex bottom-8 left-1/2 -translate-x-1/2 "
       >
         <div className="flex items-end h-16 gap-4 px-4 pb-2.5 mx-auto outline-0 rounded-2xl box-gen ring-1 backdrop-blur-md dark:ring-[#1a1a1a] ">
@@ -19,6 +23,7 @@ export default function Headpage() {
             return (
               <div key={i}>
                 <AppIcon
+                  key={i}
                   href={link.href}
                   rel={link.target === "_blank" ? "noopener noreferrer" : ""}
                   target={link.target || null}

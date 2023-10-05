@@ -33,6 +33,7 @@ const CustomCarousel = ({ images }) => {
             src={images[currentIndex]}
             alt={`Image ${currentIndex + 1}`}
             className="w-full h-96 rounded-lg object-cover"
+            priority={true}
           />
         </motion.div>
       </AnimatePresence>

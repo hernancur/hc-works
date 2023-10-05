@@ -9,6 +9,7 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 import { projectsFrontPage, linkFrontPage } from "../utils/constants";
+import { marqueeVariants } from "../utils/variants";
 
 function Frpage() {
   const [show, setShow] = useState(linkFrontPage[0]);
@@ -39,14 +40,17 @@ function Frpage() {
           About Me
         </h3>
         <p className="dark:text-neutral-300  font-InterMedium  mt-3">
-          I’m crafting exceptional products that blend Design and Engineering.
-          Making Impactful experiences with beauty and function. Currently ,
-          looking for new opportunities to collaborate with people.
+          Hernan is an engineer & development instructor 👨‍💻 from Uruguay,
+          Formula 1 enthusiast 🏎️ and an active 5-a-side football player ⚽.
+          He's passionate about helping people have a better quality of life by
+          providing them with solutions and knowledge that allow them to improve
+          themselves.
         </p>
         <p className="mt-6 dark:text-neutral-300 max-sm:text-sm font-InterMedium">
-          My objective is straightforward, to create exceptional things
-          alongside exceptional individuals. By collaborating harmoniously, we
-          can accomplish this goal.
+          Hey! Thanks for visiting my website. My objective is straightforward.
+          Create exceptional things alongside exceptional individuals. By
+          collaborating, and having real commitment we can accomplish this goal
+          very easy.
         </p>
 
         <button className="mt-10 border border-neutral-700/30 rounded-md p-2 w-full lg:w-44 bg-neutral-800/20 text-sm dark:text-neutral-400 font-semibold">
@@ -65,10 +69,14 @@ function Frpage() {
             animate="animate"
           >
             <div className=" flex gap-x-5 mt-2 uppercase font-semibold justify-evenly text-sm text-neutral-700">
-              Project Project Project Project Project Project Project Project
-              Project Project Project Project Project Project Project Project
-              Project Project Project Project Project Project Project Project
-              Project Project Project Project Project Project Project
+              WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS -
+              WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS -
+              WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS -
+              WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS -
+              WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS -
+              WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS -
+              WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS -
+              WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS -
             </div>
           </motion.div>
           <div className=" bg-gradient-to-l absolute right-0 z-10 dark:from-[#161616] dark:via-[#161616] from-[#fff] via-[#fff] to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
@@ -88,6 +96,7 @@ function Frpage() {
                   alt="project"
                   className="w-full h-full object-cover rounded-md"
                   src={each.imgLink}
+                  priority={true}
                 />
               </div>
 
@@ -134,11 +143,18 @@ function Frpage() {
             animate="animate"
           >
             <div className=" flex gap-x-5 mt-2 uppercase font-bold justify-evenly text-sm  text-neutral-700">
-              Experience Experience Experience Experience Experience Experience
-              Experience Experience Experience Experience Experience Experience
-              Experience Experience Experience Experience Experience Experience
-              Experience Experience Experience Experience Experience Experience
-              Experience Experience Experience Experience Experience Experience
+              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
+              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
+              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
+              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
+              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
+              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
+              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
+              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
+              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
+              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
+              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
+              Experience ✦
             </div>
           </motion.div>
           <div className=" bg-gradient-to-l absolute right-0 z-10 dark:from-[#161616] dark:via-[#161616] from-[#fff] via-[#fff] to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
@@ -149,8 +165,8 @@ function Frpage() {
 
       <div className="">
         <div className=" ">
-          {linkFrontPage.map((each) => (
-            <div key={each.title} className="my-8  p-2 rounded-md ">
+          {linkFrontPage.map((each, i) => (
+            <div key={i} className="my-8  p-2 rounded-md ">
               <div className="border border-neutral-700 rounded-full  w-fit px-2 p-1 flex items-center ">
                 <span className="text-xs text-neutral-700 dark:text-neutral-300 ">
                   {each.date}
@@ -165,6 +181,7 @@ function Frpage() {
                     className="w-14 h-14 rounded-full"
                     src={each.imgLink}
                     alt=""
+                    priority={true}
                   />
                   <div>
                     <h1 className="font-InterBold  text-lg ">{each.title}</h1>
@@ -202,10 +219,13 @@ function Frpage() {
             animate="animate"
           >
             <div className=" flex gap-x-5 mt-2 uppercase font-bold justify-evenly text-sm  text-neutral-700">
-              ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS
-              ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS
-              ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS
-              ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS
+              CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
+              CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
+              CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
+              CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
+              CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
+              CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
+              CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
             </div>
           </motion.div>
           <div className=" bg-gradient-to-l absolute right-0 z-10 dark:from-[#161616] dark:via-[#161616] from-[#fff] via-[#fff] to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
@@ -214,14 +234,13 @@ function Frpage() {
 
       <div>
         <p className="text-lg ">
-          I take pleasure in meeting new people and am enthusiastic about
-          assisting with any queries you may have.
+          I enjoy meeting new people, and I am enthusiastic about assisting with
+          any queries you may have.
         </p>
 
         <p className="mt-4">
-          Additionally, I love discussing forgotten or unfinished projects and
-          exploring the fascinating topic of how artificial intelligence could
-          potentially dominate the world.
+          Additionally, I love discussing the fascinating topic of how
+          artificial intelligence could potentially dominate the world.
         </p>
       </div>
     </div>
@@ -229,17 +248,3 @@ function Frpage() {
 }
 
 export default Frpage;
-
-const marqueeVariants = {
-  animate: {
-    x: [0, -1035],
-    transition: {
-      x: {
-        repeat: Infinity,
-        repeatType: "loop",
-        duration: 11,
-        ease: "linear",
-      },
-    },
-  },
-};
