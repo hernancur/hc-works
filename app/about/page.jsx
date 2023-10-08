@@ -23,9 +23,7 @@ function Aboutpage() {
   }, []);
   return (
     <div className="flex items-center justify-center min-h-screen">
-      {isLoading ? (
-        <div className="text-center">{"Please wait :)"}</div>
-      ) : (
+      {
         <div className="relative max-w-5xl mx-auto px-8">
           <div className="relative mt-14">
             <h2 className="text-xl text-center dark:text-neutral-400 font-InterBold uppercase ">
@@ -99,7 +97,7 @@ function Aboutpage() {
             </div>
           </div>
         </div>
-      )}
+      }
     </div>
   );
 }
