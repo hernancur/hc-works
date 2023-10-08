@@ -11,23 +11,23 @@ import Image from "next/image";
 
 const projects = [
   {
-    imgLink: "https://i.ibb.co/J7YPxbG/img6.jpg",
+    imgLink: "/img/img6.jpg",
     title: "Redesigning the landing page for better discoveribility",
     subT: "Redesigned 'The Product House' landing page for my take-home assignment! My goal was to create an engaging and informative showcase of their brand.",
   },
   {
-    imgLink: "https://i.ibb.co/J7YPxbG/img6.jpg",
+    imgLink: "/img/img6.jpg",
     title: "UI/ UX Case Study: Group Food Ordering",
     subT: "Designed an solution that simplifies the decision-making process and saves time for users while ordering food in a group.",
   },
   {
-    imgLink: "https://i.ibb.co/J7YPxbG/img6.jpg",
+    imgLink: "/img/img6.jpg",
     title:
       "UI/ UX Case Study: Enabling local stores to sell on WhatsApp for Businesses",
     subT: "Designed a feature that simplifies local store sales on WhatsApp for businesses..",
   },
   {
-    imgLink: "https://i.ibb.co/J7YPxbG/img6.jpg",
+    imgLink: "/img/img6.jpg",
     title: "Creating Dive platform's Trivia Game",
     subT: "Designed a trivia game to enhance user engagement during sessions on Dive platform.",
   },

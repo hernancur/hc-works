@@ -1,6 +1,6 @@
 "use client";
 import { motion, useMotionValue } from "framer-motion";
-import { HeaderLinks } from "../utils/constants";
+import { HeaderLinks } from "../../utils/constants";
 import AppIcon from "./AppIcon";
 import ThemeToggleNav from "./ThemeToggleNav";
 

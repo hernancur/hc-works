@@ -10,7 +10,7 @@ import {
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import CustomCarousel from "./Carousel/Custom";
-import { aboutImgs } from "../utils/constants";
+import { aboutImgs } from "../../utils/constants";
 import { TbArrowBackUp } from "react-icons/tb";
 
 function Aboutpage() {
@@ -39,6 +39,12 @@ function Aboutpage() {
           </div>
 
           <div className="mt-10">
+            <p className="mt-6 dark:text-neutral-300 max-sm:text-sm font-InterMedium">
+              Thanks for visiting my site. My objective is straightforward.
+              Create exceptional things alongside exceptional individuals. By
+              collaborating, and having real commitment we can accomplish this
+              goal very easy.
+            </p>
             <div style={{ width: "100%" }}>
               <CustomCarousel images={aboutImgs} />
             </div>

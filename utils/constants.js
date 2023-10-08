@@ -1,26 +1,37 @@
 export const aboutImgs = [
-  "https://i.ibb.co/R6DPtss/M395193-top.jpg",
-  "https://i.ibb.co/J7YPxbG/img6.jpg",
-  "https://i.ibb.co/R6DPtss/M395193-top.jpg",
-  "https://i.ibb.co/J7YPxbG/img6.jpg",
+  "/img/img7.jpg",
+  "/img/img6.jpg",
+  "/img/img7.jpg",
+  "/img/img6.jpg",
 ];
 
 export const projectsFrontPage = [
   {
-    imgLink: "https://i.ibb.co/J7YPxbG/img6.jpg",
-    title: "UI/ UX Case Study: Group Food Ordering",
-    subT: "Designed an solution that simplifies the decision-making process and saves time for users while ordering food in a group.",
+    status: "Progress",
+    link: "https://muestra-landing.vercel.app/",
+    year: 2023,
+    imgLink: "/img/landing2.jpg",
+    imgLink2: "/img/landing1.jpg",
+    title: "Freelance | Web Solutions",
+    subT: "This is a demonstration of what you could achieve with your own custom-developed website. This sample page exemplifies the potential to reach new customers, boost your sales and stand out.",
   },
   {
-    imgLink: "https://i.ibb.co/J7YPxbG/img6.jpg",
-    title:
-      "UI/ UX Case Study: Enabling local stores to sell on WhatsApp for Businesses",
-    subT: "Designed a feature that simplifies local store sales on WhatsApp for businesses..",
+    status: null,
+    link: "https://owlfurnitureandobjects.com/",
+    year: 2020,
+    imgLink: "/img/owl1.jpg",
+    imgLink2: "/img/owl2.jpg",
+    title: "Freelance | OWL",
+    subT: "Collaborated with OWL, Barcelona-based design studio known for crafting one-of-a-kind furniture and objects. Helping bring their unique creations to the digital world.",
   },
   {
-    imgLink: "https://i.ibb.co/J7YPxbG/img6.jpg",
-    title: "Creating Dive platform's Trivia Game",
-    subT: "Designed a trivia game to enhance user engagement during sessions on Dive platform.",
+    status: null,
+    link: "https://pf-beat-connect.vercel.app/",
+    year: 2022,
+    imgLink: "/img/beat1.jpg",
+    imgLink2: "/img/beat2.jpg",
+    title: "Product Owner | Beat Connect",
+    subT: "Alongside my students we designed a solution that simplifies the process of finding and purchasing backing tracks for songs, making life easier for musicians and producers around the world.",
   },
 ];
 
@@ -63,10 +74,10 @@ export let linkFrontPage = [
 
 import {
   PiHouseThin,
-  PiGithubLogoThin,
-  PiTwitterLogoThin,
   PiCodeThin,
   PiAddressBookThin,
+  // PiGithubLogoThin,
+  // PiTwitterLogoThin,
 } from "react-icons/pi";
 import { GoPaperclip } from "react-icons/go";
 
@@ -83,8 +94,8 @@ export const HeaderLinks = [
   },
 
   {
-    href: "/project",
-    label: "project",
+    href: "/projects",
+    label: "projects",
     Icon: <PiCodeThin />,
   },
   // {

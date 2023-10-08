@@ -17,16 +17,22 @@ const Status = [
       name: "Completed",
       color: "lime",
     },
+    Progress: {
+      name: "Available upon request",
+      color: "white",
+    },
   },
 ];
 
-function Statuspage({ isAvailbale, Relaxing, className }) {
+function Statuspage({ isAvailbale, Relaxing, className, stat }) {
   let [status, setStatus] = useState(
-    isAvailbale
+    stat
+      ? Status[0].Progress
+      : isAvailbale
       ? Status[0].Available
       : Relaxing
       ? Status[0].Relaxing
-      : Status[0].NotAvailable
+      : Status[0].Relaxing
   );
 
   let bgColorClass =

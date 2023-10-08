@@ -6,13 +6,28 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { PiLockThin } from "react-icons/pi";
 import Image from "next/image";
+import LinkedinPhoto from "../../public/img/linkedin.jpg";
 
 import { motion } from "framer-motion";
-import { projectsFrontPage, linkFrontPage } from "../utils/constants";
-import { marqueeVariants } from "../utils/variants";
+import { projectsFrontPage, linkFrontPage } from "../../utils/constants";
+import { marqueeVariants } from "../../utils/variants";
 
 function Frpage() {
-  const [show, setShow] = useState(linkFrontPage[0]);
+  const [hoveredStates, setHoveredStates] = useState(
+    Array(projectsFrontPage.length).fill(false)
+  );
+
+  const handleMouseEnter = (index) => {
+    const updatedStates = [...hoveredStates];
+    updatedStates[index] = true;
+    setHoveredStates(updatedStates);
+  };
+
+  const handleMouseLeave = (index) => {
+    const updatedStates = [...hoveredStates];
+    updatedStates[index] = false;
+    setHoveredStates(updatedStates);
+  };
 
   return (
     <div className="mt-32">
@@ -21,7 +36,7 @@ function Frpage() {
           width={300}
           height={300}
           className="w-16 h-16 rounded-full object-cover"
-          src="/img/img3.jpg"
+          src="/img/me.jpg"
           alt="Profile"
         />
         <div>
@@ -40,22 +55,34 @@ function Frpage() {
           About Me
         </h3>
         <p className="dark:text-neutral-300  font-InterMedium  mt-3">
-          Hernan is an engineer & development instructor 👨‍💻 from Uruguay,
-          Formula 1 enthusiast 🏎️ and an active 5-a-side football player ⚽.
-          He's passionate about helping people have a better quality of life by
-          providing them with solutions and knowledge that allow them to improve
-          themselves.
-        </p>
-        <p className="mt-6 dark:text-neutral-300 max-sm:text-sm font-InterMedium">
-          Hey! Thanks for visiting my website. My objective is straightforward.
-          Create exceptional things alongside exceptional individuals. By
-          collaborating, and having real commitment we can accomplish this goal
-          very easy.
+          Hernan is an entrepreneur, engineer & development instructor 👨‍💻 from
+          Uruguay, Formula 1 enthusiast 🏎️ and an active 5-a-side football
+          player ⚽. He's passionate about helping people have a better quality
+          of life by providing them with solutions and knowledge that allow them
+          to improve themselves.
         </p>
 
-        <button className="mt-10 border border-neutral-700/30 rounded-md p-2 w-full lg:w-44 bg-neutral-800/20 text-sm dark:text-neutral-400 font-semibold">
-          View resume
-        </button>
+        <Link
+          target="blank"
+          href={
+            "https://www.linkedin.com/in/hernan-garcia-fullstack/overlay/1635544043334/single-media-viewer/?profileId=ACoAADXh9TYB2ILulzhTd0L6wch4hgr-kHYA4CQ"
+          }
+        >
+          <button className="mt-10 border border-neutral-700/30 rounded-md p-2 w-full lg:w-44 bg-neutral-800/20 text-sm dark:text-neutral-400 font-semibold">
+            View resume
+          </button>
+        </Link>
+      </div>
+
+      <div className="mt-6">
+        <Image
+          width={1280}
+          height={627}
+          src={LinkedinPhoto}
+          alt={`How to grow my company`}
+          className="w-full h-72 rounded-lg object-cover"
+          priority={true}
+        />
       </div>
 
       {/* Marquee text */}
@@ -69,14 +96,14 @@ function Frpage() {
             animate="animate"
           >
             <div className=" flex gap-x-5 mt-2 uppercase font-semibold justify-evenly text-sm text-neutral-700">
-              WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS -
-              WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS -
-              WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS -
-              WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS -
-              WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS -
-              WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS -
-              WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS -
-              WORKS - WORKS - WORKS - WORKS - WORKS - WORKS - WORKS -
+              FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦
+              FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦
+              FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦
+              FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦
+              FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦
+              FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦
+              FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦
+              FEATURED ✦ FEATURED ✦ FEATURED ✦
             </div>
           </motion.div>
           <div className=" bg-gradient-to-l absolute right-0 z-10 dark:from-[#161616] dark:via-[#161616] from-[#fff] via-[#fff] to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
@@ -89,25 +116,32 @@ function Frpage() {
         {projectsFrontPage.map((each, i) => (
           <div key={i}>
             <div className="flex flex-col lg:flex-row  gap-x-8 my-6">
-              <div className="h-60 w-full md:w-64 ">
-                <Image
-                  width={700}
-                  height={700}
-                  alt="project"
-                  className="w-full h-full object-cover rounded-md"
-                  src={each.imgLink}
-                  priority={true}
-                />
+              <div
+                className="h-60 w-full md:w-64 relative"
+                onMouseEnter={() => handleMouseEnter(i)}
+                onMouseLeave={() => handleMouseLeave(i)}
+              >
+                <Link target="blank" href={each.link}>
+                  <Image
+                    width={850}
+                    height={850}
+                    alt="project"
+                    className="w-full h-full object-cover rounded-md transition-transform transform scale-100 hover:scale-110"
+                    src={hoveredStates[i] ? each.imgLink2 : each.imgLink}
+                    priority={true}
+                  />
+                </Link>
               </div>
 
               <div>
                 <div className="w-fit flex items-center gap-x-2 ">
                   <div className=" px-2 py-1 text-xs font-semibold   border rounded-full dark:border-neutral-700">
-                    <span>2022</span>
+                    <span>{each.year}</span>
                   </div>
                   <div className=" flex items-center gap-x-3">
                     <Status
-                      Relaxing
+                      Relaxing={each.status}
+                      stat={each.status}
                       className=" border rounded-full dark:border-neutral-700 px-2 py-1"
                     />
                   </div>
@@ -121,9 +155,11 @@ function Frpage() {
                     {each.subT}
                   </p>
 
-                  <button className="mt-11 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 w-full bg-white dark:bg-neutral-800/10 text-sm dark:text-neutral-400 font-semibold shadow-md">
-                    Read Now
-                  </button>
+                  <Link target="blank" href={each.link}>
+                    <button className="mt-11 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 w-full bg-white dark:bg-neutral-800/10 text-sm dark:text-neutral-400 font-semibold shadow-md">
+                      View
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -196,13 +232,6 @@ function Frpage() {
                   {each.subTitle}
                 </p>
               </div>
-
-              {show.bttn && (
-                <button className="mt-10 border border-neutral-700/30 rounded-md px-2 py-2 flex justify-between items-center gap-x-2 lg:w-36 bg-neutral-800/20 text-sm text-neutral-900 dark:text-neutral-200 font-semibold">
-                  <span>View my work</span>
-                  <PiLockThin className="text-neutral-900 dark:text-neutral-200" />
-                </button>
-              )}
             </div>
           ))}
         </div>
@@ -232,17 +261,11 @@ function Frpage() {
         </div>
       </div>
 
-      <div>
-        <p className="text-lg ">
-          I enjoy meeting new people, and I am enthusiastic about assisting with
-          any queries you may have.
+      {/* <div>
+        <p className="flex justify-center text-lg ">
+          I'm enthusiastic about assisting with any queries you may have.
         </p>
-
-        <p className="mt-4">
-          Additionally, I love discussing the fascinating topic of how
-          artificial intelligence could potentially dominate the world.
-        </p>
-      </div>
+      </div> */}
     </div>
   );
 }
