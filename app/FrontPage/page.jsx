@@ -1,13 +1,8 @@
 "use client";
-
 import Status from "@/app/Status/page";
-
 import React, { useState } from "react";
 import Link from "next/link";
-import { PiLockThin } from "react-icons/pi";
 import Image from "next/image";
-import LinkedinPhoto from "../../public/img/linkedin.jpg";
-
 import { motion } from "framer-motion";
 import { projectsFrontPage, linkFrontPage } from "../../utils/constants";
 import { marqueeVariants } from "../../utils/variants";
@@ -72,17 +67,6 @@ function Frpage() {
             View resume
           </button>
         </Link>
-      </div>
-
-      <div className="mt-6">
-        <Image
-          width={1280}
-          height={627}
-          src={LinkedinPhoto}
-          alt={`How to grow my company`}
-          className="w-full h-72 rounded-lg object-cover"
-          priority={true}
-        />
       </div>
 
       {/* Marquee text */}

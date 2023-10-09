@@ -4,10 +4,12 @@ import Header from "@/app/Header/page";
 import Footer from "@/app/Footer/page";
 
 export const metadata = {
-  title: "hernancur",
+  title: "Your idea. Our reality",
 };
 
 export default function RootLayout({ children }) {
+
+
   return (
     <html lang="en">
       <body>
