@@ -65,7 +65,7 @@ function Frpage() {
         <Link
           target="blank"
           href={
-            "https://www.linkedin.com/in/hernan-garcia-fullstack/overlay/1635544043334/single-media-viewer/?profileId=ACoAADXh9TYB2ILulzhTd0L6wch4hgr-kHYA4CQ"
+            "https://drive.google.com/file/d/1oZWUs5O5Nd4ytoRzU5hspc-VaWx2a3jz/view?usp=sharing"
           }
         >
           <button className="mt-10 border border-neutral-700/30 rounded-md p-2 w-full lg:w-44 bg-neutral-800/20 text-sm dark:text-neutral-400 font-semibold">
