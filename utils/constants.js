@@ -17,21 +17,21 @@ export const projectsFrontPage = [
   },
   {
     status: null,
+    link: "https://pf-beat-connect.vercel.app/",
+    year: 2022,
+    imgLink: "/img/beat2.jpg",
+    imgLink2: "/img/beat1.jpg",
+    title: "Product Owner | Beat Connect",
+    subT: "Alongside my students we designed a solution that simplifies the process of finding and purchasing backing tracks for songs, making life easier for musicians and producers around the world.",
+  },
+  {
+    status: null,
     link: "https://owlfurnitureandobjects.com/",
     year: 2020,
     imgLink: "/img/owl1.jpg",
     imgLink2: "/img/owl2.jpg",
     title: "Freelance | OWL",
     subT: "Collaborated with OWL, Barcelona-based design studio known for crafting one-of-a-kind furniture and objects. Helping bring their unique creations to the digital world.",
-  },
-  {
-    status: null,
-    link: "https://pf-beat-connect.vercel.app/",
-    year: 2022,
-    imgLink: "/img/beat1.jpg",
-    imgLink2: "/img/beat2.jpg",
-    title: "Product Owner | Beat Connect",
-    subT: "Alongside my students we designed a solution that simplifies the process of finding and purchasing backing tracks for songs, making life easier for musicians and producers around the world.",
   },
 ];
 
@@ -76,10 +76,8 @@ import {
   PiHouseThin,
   PiCodeThin,
   PiAddressBookThin,
-  // PiGithubLogoThin,
-  // PiTwitterLogoThin,
+  PiChatCircleDotsThin,
 } from "react-icons/pi";
-import { GoPaperclip } from "react-icons/go";
 
 export const HeaderLinks = [
   {
@@ -92,29 +90,14 @@ export const HeaderLinks = [
     label: "About",
     Icon: <PiAddressBookThin />,
   },
-
   {
     href: "/projects",
     label: "projects",
     Icon: <PiCodeThin />,
   },
-  // {
-  //   href: "https://github.com/hernancur",
-  //   label: "GitHub",
-  //   target: "_blank",
-  //   Icon: <PiGithubLogoThin />,
-  //   rel: "noopener noreferrer",
-  // },
-  // {
-  //   href: "https://twitter.com/hernancur",
-  //   label: "GitHub",
-  //   target: "_blank",
-  //   Icon: <PiTwitterLogoThin />,
-  //   rel: "noopener noreferrer",
-  // },
   {
-    href: "/experience",
-    label: "experience",
-    Icon: <GoPaperclip />,
+    href: "/contact",
+    label: "contact",
+    Icon: <PiChatCircleDotsThin />,
   },
 ];

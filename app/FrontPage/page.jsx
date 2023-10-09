@@ -3,26 +3,19 @@ import Status from "@/app/Status/page";
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { projectsFrontPage, linkFrontPage } from "../../utils/constants";
-import { marqueeVariants } from "../../utils/variants";
+import Marquee from "./Marquee/Marquee";
+import useHovered from "./useHovered";
 
 function Frpage() {
-  const [hoveredStates, setHoveredStates] = useState(
-    Array(projectsFrontPage.length).fill(false)
-  );
-
-  const handleMouseEnter = (index) => {
-    const updatedStates = [...hoveredStates];
-    updatedStates[index] = true;
-    setHoveredStates(updatedStates);
-  };
-
-  const handleMouseLeave = (index) => {
-    const updatedStates = [...hoveredStates];
-    updatedStates[index] = false;
-    setHoveredStates(updatedStates);
-  };
+  const {
+    hoveredStates,
+    enterCard,
+    leaveCard,
+    hoverTitle,
+    enterTitle,
+    leaveTitle,
+  } = useHovered();
 
   return (
     <div className="mt-32">
@@ -35,7 +28,13 @@ function Frpage() {
           alt="Profile"
         />
         <div>
-          <h2 className="font-extrabold font-InterBlack dark:text-white text-3xl">
+          <h2
+            className={`font-extrabold font-InterBlack text-3xl ${
+              hoverTitle ? "text-orange-600" : "dark:text-white"
+            }`}
+            onMouseEnter={() => enterTitle()}
+            onMouseLeave={() => leaveTitle()}
+          >
             Hernan Garcia
           </h2>
           <Link href={"https://instagram.com/hernan.cur"}>
@@ -63,7 +62,10 @@ function Frpage() {
             "https://drive.google.com/file/d/1oZWUs5O5Nd4ytoRzU5hspc-VaWx2a3jz/view?usp=sharing"
           }
         >
-          <button className="mt-10 border border-neutral-700/30 rounded-md p-2 w-full lg:w-44 bg-neutral-800/20 text-sm dark:text-neutral-400 font-semibold">
+          <button
+            style={{ transition: "transform 0.2s ease-in-out" }}
+            className="mt-10 border border-neutral-700/30 rounded-md p-2 w-full lg:w-44 bg-neutral-800/20 text-sm dark:text-neutral-400 font-semibold hover:scale-110"
+          >
             View resume
           </button>
         </Link>
@@ -71,28 +73,7 @@ function Frpage() {
 
       {/* Marquee text */}
 
-      <div>
-        <div className="marquee  relative my-24 h-10 max-w-6xl overflow-x-hidden">
-          <div className=" bg-gradient-to-r absolute z-10 from-[#fff] via-[#fff] dark:from-[#161616] dark:via-[#161616] to-transparent w-20 rounded-md h-9 transition-all ease-in duration-200" />
-          <motion.div
-            className="track"
-            variants={marqueeVariants}
-            animate="animate"
-          >
-            <div className=" flex gap-x-5 mt-2 uppercase font-semibold justify-evenly text-sm text-neutral-700">
-              FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦
-              FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦
-              FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦
-              FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦
-              FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦
-              FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦
-              FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦ FEATURED ✦
-              FEATURED ✦ FEATURED ✦ FEATURED ✦
-            </div>
-          </motion.div>
-          <div className=" bg-gradient-to-l absolute right-0 z-10 dark:from-[#161616] dark:via-[#161616] from-[#fff] via-[#fff] to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
-        </div>
-      </div>
+      <Marquee text={"FEATURED"} />
 
       {/* Projects */}
 
@@ -102,8 +83,8 @@ function Frpage() {
             <div className="flex flex-col lg:flex-row  gap-x-8 my-6">
               <div
                 className="h-60 w-full md:w-64 relative"
-                onMouseEnter={() => handleMouseEnter(i)}
-                onMouseLeave={() => handleMouseLeave(i)}
+                onMouseEnter={() => enterCard(i)}
+                onMouseLeave={() => leaveCard(i)}
               >
                 <Link target="blank" href={each.link}>
                   <Image
@@ -132,15 +113,24 @@ function Frpage() {
                 </div>
 
                 <div>
-                  <h1 className="font-InterBold text-lg max-w-lg mt-4">
+                  <h1
+                    className={`font-InterBold text-lg max-w-lg mt-4 ${
+                      hoveredStates[i] ? "text-orange-600" : ""
+                    }  `}
+                  >
                     {each.title}
                   </h1>
-                  <p className="text-base mt-3 font-InterMedium dark:text-neutral-400 max-w-lg">
+                  <p
+                    className={`text-base mt-3 font-InterMedium dark:text-neutral-400 max-w-lg   `}
+                  >
                     {each.subT}
                   </p>
 
                   <Link target="blank" href={each.link}>
-                    <button className="mt-11 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 w-full bg-white dark:bg-neutral-800/10 text-sm dark:text-neutral-400 font-semibold shadow-md">
+                    <button
+                      style={{ transition: "transform 0.2s ease-in-out" }}
+                      className="mt-11 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 w-full bg-white dark:bg-neutral-800/10 text-sm dark:text-neutral-400 font-semibold shadow-md   hover:scale-110 "
+                    >
                       View
                     </button>
                   </Link>
@@ -152,34 +142,7 @@ function Frpage() {
         ))}
       </div>
 
-      {/* Marque texts */}
-
-      <div>
-        <div className="marquee my-24 h-10 relative  max-w-6xl overflow-x-hidden">
-          <div className=" bg-gradient-to-r absolute z-10 from-[#fff] via-[#fff] dark:from-[#161616] dark:via-[#161616] to-transparent w-20 rounded-md h-9 transition-all ease-in duration-200" />
-          <motion.div
-            className="track"
-            variants={marqueeVariants}
-            animate="animate"
-          >
-            <div className=" flex gap-x-5 mt-2 uppercase font-bold justify-evenly text-sm  text-neutral-700">
-              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
-              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
-              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
-              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
-              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
-              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
-              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
-              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
-              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
-              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
-              Experience ✦ Experience ✦ Experience ✦ Experience ✦ Experience ✦
-              Experience ✦
-            </div>
-          </motion.div>
-          <div className=" bg-gradient-to-l absolute right-0 z-10 dark:from-[#161616] dark:via-[#161616] from-[#fff] via-[#fff] to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
-        </div>
-      </div>
+      <Marquee text={"Experience"} />
 
       {/* Experience */}
 
@@ -221,35 +184,7 @@ function Frpage() {
         </div>
       </div>
 
-      {/* Marque texts */}
-
-      <div>
-        <div className="marquee  relative my-24 h-10 max-w-6xl overflow-x-hidden">
-          <div className=" bg-gradient-to-r absolute z-10 from-[#fff] via-[#fff] dark:from-[#161616] dark:via-[#161616] to-transparent w-20 rounded-md h-9 transition-all ease-in duration-200" />
-          <motion.div
-            className="track"
-            variants={marqueeVariants}
-            animate="animate"
-          >
-            <div className=" flex gap-x-5 mt-2 uppercase font-bold justify-evenly text-sm  text-neutral-700">
-              CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
-              CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
-              CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
-              CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
-              CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
-              CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
-              CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT
-            </div>
-          </motion.div>
-          <div className=" bg-gradient-to-l absolute right-0 z-10 dark:from-[#161616] dark:via-[#161616] from-[#fff] via-[#fff] to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
-        </div>
-      </div>
-
-      {/* <div>
-        <p className="flex justify-center text-lg ">
-          I'm enthusiastic about assisting with any queries you may have.
-        </p>
-      </div> */}
+      <Marquee text={"Contact"} />
     </div>
   );
 }

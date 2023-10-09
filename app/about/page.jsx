@@ -8,10 +8,10 @@ import {
   SiGooglechrome,
 } from "react-icons/si";
 import Link from "next/link";
+import { TbArrowBackUp } from "react-icons/tb";
 import React, { useEffect, useState } from "react";
 import CustomCarousel from "./Carousel/Custom";
 import { aboutImgs } from "../../utils/constants";
-import { TbArrowBackUp } from "react-icons/tb";
 
 function Aboutpage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,11 +29,6 @@ function Aboutpage() {
             <h2 className="text-xl text-center dark:text-neutral-400 font-InterBold uppercase ">
               ABOUT ME
             </h2>
-            <Link href={"/"}>
-              <div className=" bg-neutral-700/10 rounded-md absolute -top-1  w-12 h-8 flex  items-center justify-center ">
-                <TbArrowBackUp className="dark:text-white  text-black text-xl" />
-              </div>
-            </Link>
           </div>
 
           <div className="mt-10">

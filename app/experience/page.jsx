@@ -55,11 +55,6 @@ function Expage() {
         <h2 className="text-xl text-center dark:text-neutral-400 font-InterBold uppercase ">
           Experience
         </h2>
-        <Link href={"/"}>
-          <div className=" bg-neutral-700/10 rounded-md absolute -top-1  w-12 h-8 flex  items-center justify-center ">
-            <TbArrowBackUp className="dark:text-white  text-black text-xl" />
-          </div>
-        </Link>
       </div>
 
       <div className="mt-44">

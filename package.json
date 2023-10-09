@@ -11,6 +11,7 @@
   "dependencies": {
     "@react-pdf/renderer": "^3.1.12",
     "autoprefixer": "10.4.15",
+    "emailjs": "^4.0.3",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "framer-motion": "^10.16.4",
