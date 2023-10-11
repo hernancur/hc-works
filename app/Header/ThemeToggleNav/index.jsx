@@ -1,8 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, useSpring, useTransform } from "framer-motion";
-import { PiSunThin, PiMoonLight } from "react-icons/pi";
+import { PiSunLight, PiMoonLight } from "react-icons/pi";
 import { useTheme } from "next-themes";
-
 
 export default function ThemeToggleNav({ className, rel, mouseX, ...props }) {
   let { resolvedTheme, setTheme } = useTheme();
@@ -32,7 +31,7 @@ export default function ThemeToggleNav({ className, rel, mouseX, ...props }) {
       onClick={() => setTheme(otherTheme)}
     >
       <PiMoonLight className="w-6/12 transition  dark:hidden dark:stroke-neutral-300 stroke-neutral-900" />
-      <PiSunThin className="hidden w-6/12 transition  dark:block dark:stroke-neutral-300 stroke-neutral-900" />
+      <PiSunLight className="hidden w-6/12 transition  dark:block dark:stroke-neutral-300 stroke-neutral-900" />
     </motion.div>
   );
 }

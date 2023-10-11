@@ -101,9 +101,9 @@ export let linkFrontPage = [
 // Header
 import {
   PiHouseThin,
-  PiAddressBookThin,
-  PiBookBookmarkThin,
-  PiChatsThin,
+  PiWhatsappLogoThin,
+  PiSuitcaseSimpleThin,
+  PiUserThin,
 } from "react-icons/pi";
 
 export const HeaderLinks = [
@@ -115,17 +115,17 @@ export const HeaderLinks = [
   {
     href: "/about",
     label: "About",
-    Icon: <PiAddressBookThin />,
+    Icon: <PiUserThin />,
   },
   {
     href: "/experience",
     label: "experience",
-    Icon: <PiBookBookmarkThin />,
+    Icon: <PiSuitcaseSimpleThin />,
   },
   {
     href: "https://api.whatsapp.com/send?phone=59892956528&text=Hello%20I%20want%20more%20information%20about%20...",
     label: "contact",
-    Icon: <PiChatsThin />,
+    Icon: <PiWhatsappLogoThin />,
   },
 ];
 

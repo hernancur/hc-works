@@ -5,43 +5,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { linkFrontPage } from "@/utils/constants";
 
-// let link = [
-//   {
-//     date: "Dec 2022 - Apr 2023",
-//     imgLink: "/img/img6.jpg",
-//     title: "Product Design Intern",
-//     sub: "Avalon Scenes",
-//     subTitle:
-//       "At Scenes, we were building an all-in-one community platform that enables creators to connect & manage their community better.",
-//     bttn: "View my work",
-//   },
-//   {
-//     date: "Jul 2022 - Sep 2022",
-//     imgLink: "/img/img6.jpg",
-//     title: "Designer in Residence",
-//     sub: "10kdesigners",
-//     subTitle:
-//       "Design cohort run by Abhinav Chikara (aka Abnux) and Jayneil Dayal, that empowers designers through mentorship and real-world projects.",
-//   },
-
-//   {
-//     date: "Jan 2022 - Mar 2022",
-//     imgLink: "/img/img6.jpg",
-//     title: "Product Design Intern",
-//     sub: "Dive",
-//     subTitle:
-//       "I built and facilitated engaging remote experiences, connecting colleagues at work. I designed various games, including 'Word Pirate,' which became one of the platform's most-played games within two weeks of launch.",
-//   },
-//   {
-//     date: "Sep 2021 - Dec 2021 ",
-//     imgLink: "/img/img6.jpg",
-//     title: "Product Design Intern",
-//     sub: "Winuall",
-//     subTitle:
-//       "I focused on visual and interaction design for the product, crafting compelling narratives. My responsibilities included creating interactive features that enriched user experiences on both the app and website.",
-//   },
-// ];
-
 function Expage() {
   return (
     <motion.div
