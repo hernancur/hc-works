@@ -24,7 +24,7 @@ export default function Techs() {
             }}
           >
             <Image width={50} height={50} src={tech.icon} alt={tech.name} />
-            <h3 className="font-InterBold text-lg mt-2">{tech.name}</h3>
+            <h3 className="font-InterBold text-gray-500 text-lg mt-2">{tech.name}</h3>
           </div>
         </Link>
       ))}

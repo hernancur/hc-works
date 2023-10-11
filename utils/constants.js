@@ -136,6 +136,11 @@ export const techStack = [
   {
     name: "GIT",
     icon: "/icons/git.png",
+    href: "https://git-scm.com/",
+  },
+  {
+    name: "NPM",
+    icon: "/icons/npm.png",
     href: "/",
   },
   {
