@@ -3,9 +3,10 @@ import Status from "@/app/Status/page";
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { projectsFrontPage, linkFrontPage } from "../../utils/constants";
+import { projectsFrontPage } from "../../utils/constants";
 import Marquee from "./Marquee/Marquee";
 import useHovered from "./useHovered";
+import Techs from "./Techs/techs";
 
 function Frpage() {
   const {
@@ -21,8 +22,8 @@ function Frpage() {
     <div className="mt-32">
       <div className="flex gap-x-4">
         <Image
-          width={300}
-          height={300}
+          width={1080}
+          height={1080}
           className="w-16 h-16 rounded-full object-cover"
           src="/img/me.jpg"
           alt="Profile"
@@ -49,13 +50,20 @@ function Frpage() {
           About Me
         </h3>
         <p className="dark:text-neutral-300  font-InterMedium  mt-3">
-          Hernan is an entrepreneur, engineer & development instructor 👨‍💻 from
-          Uruguay, Formula 1 enthusiast 🏎️ and an active 5-a-side football
-          player ⚽. He's passionate about helping people have a better quality
-          of life by providing them with solutions and knowledge that allow them
-          to improve themselves.
+          Entrepreneur, developer, and instructor with +4 years of experience.
+          Specialized in web presence, growing and development for
+          professionals.
         </p>
-
+        <p className="dark:text-neutral-300  font-InterMedium  mt-3">
+          My experience has enabled me to learn the business, develop data
+          driven thinking for accurate decision making, and time management.
+        </p>
+        {/* <p className="dark:text-neutral-300  font-InterMedium  mt-3">
+          On the other hand I'm a F1 fan 🏎️ and an active 5-a-side football
+          player ⚽. Passionate about helping people providing them with
+          solutions and knowledge that allow them to improve their quality of
+          life.
+        </p> */}
         <Link
           target="blank"
           href={
@@ -142,49 +150,9 @@ function Frpage() {
         ))}
       </div>
 
-      <Marquee text={"Experience"} />
+      <Marquee text={"Tech stack"} />
 
-      {/* Experience */}
-
-      <div className="">
-        <div className=" ">
-          {linkFrontPage.map((each, i) => (
-            <div key={i} className="my-8  p-2 rounded-md ">
-              <div className="border border-neutral-700 rounded-full  w-fit px-2 p-1 flex items-center ">
-                <span className="text-xs text-neutral-700 dark:text-neutral-300 ">
-                  {each.date}
-                </span>
-              </div>
-
-              <div>
-                <div className="flex gap-x-4 my-6">
-                  <Image
-                    width={400}
-                    height={400}
-                    className="w-14 h-14 rounded-full"
-                    src={each.imgLink}
-                    alt=""
-                    priority={true}
-                  />
-                  <div>
-                    <h1 className="font-InterBold  text-lg ">{each.title}</h1>
-                    {/* you can add your desired links hrefs in the lnk array n wrap here with href */}
-                    <Link className="font-semibold hover:underline" href={"/"}>
-                      {each.sub}
-                    </Link>
-                  </div>
-                </div>
-
-                <p className=" text-neutral-500 text-lg max-w-3xl">
-                  {each.subTitle}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <Marquee text={"Contact"} />
+      <Techs />
     </div>
   );
 }

@@ -1,11 +1,14 @@
 "use client";
 import { useState } from "react";
-import { projectsFrontPage } from "@/utils/constants";
+import { projectsFrontPage, techStack } from "@/utils/constants";
 
 export default function useHovered() {
   const [hoverTitle, setHoverTitle] = useState(false);
   const [hoveredStates, setHoveredStates] = useState(
     Array(projectsFrontPage.length).fill(false)
+  );
+  const [hoveredTech, setHoveredTech] = useState(
+    Array(techStack.length).fill(false)
   );
 
   function enterCard(index) {
@@ -18,6 +21,17 @@ export default function useHovered() {
     const updatedStates = [...hoveredStates];
     updatedStates[index] = false;
     setHoveredStates(updatedStates);
+  }
+  function enterTech(index) {
+    const updatedStates = [...hoveredTech];
+    updatedStates[index] = true;
+    setHoveredTech(updatedStates);
+  }
+
+  function leaveTech(index) {
+    const updatedStates = [...hoveredTech];
+    updatedStates[index] = false;
+    setHoveredTech(updatedStates);
   }
 
   function enterTitle() {
@@ -34,5 +48,8 @@ export default function useHovered() {
     hoverTitle,
     enterTitle,
     leaveTitle,
+    hoveredTech,
+    enterTech,
+    leaveTech,
   };
 }
