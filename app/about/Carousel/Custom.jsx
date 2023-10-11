@@ -32,7 +32,7 @@ const CustomCarousel = ({ images }) => {
             height={600}
             src={images[currentIndex]}
             alt={`Image ${currentIndex + 1}`}
-            className="w-full h-96 rounded-lg object-cover"
+            className="w-full h-48 rounded-lg object-cover"
             priority={true}
           />
         </motion.div>

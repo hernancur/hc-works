@@ -1,8 +1,8 @@
 export const aboutImgs = [
   "/img/img7.jpg",
-  "/img/img6.jpg",
+  "/img/workshop.jpg",
   "/img/img7.jpg",
-  "/img/img6.jpg",
+  "/img/workshop.jpg",
 ];
 
 // Projects
@@ -113,9 +113,8 @@ export const HeaderLinks = [
     Icon: <PiHouseThin />,
   },
   {
-    href: "https://www.linkedin.com/in/hernan-garcia-fullstack/",
+    href: "/about",
     label: "About",
-    target: "_blank",
     Icon: <PiUserThin />,
   },
   {
@@ -127,22 +126,13 @@ export const HeaderLinks = [
     href: "https://api.whatsapp.com/send?phone=59892956528&text=Hello%20I%20want%20more%20information%20about%20...",
     label: "contact",
     Icon: <PiWhatsappLogoThin />,
+    target: "blank",
   },
 ];
 
 // Techstack
 
 export const techStack = [
-  {
-    name: "GIT",
-    icon: "/icons/git.png",
-    href: "https://git-scm.com/",
-  },
-  {
-    name: "NPM",
-    icon: "/icons/npm.png",
-    href: "/",
-  },
   {
     name: "JavaScript",
     icon: "/icons/javascript.jpg",
@@ -153,18 +143,11 @@ export const techStack = [
     icon: "/icons/TS.png",
     href: "https://www.typescriptlang.org/",
   },
-
   {
     name: "HTML",
     icon: "/icons/html.png",
     href: "https://developer.mozilla.org/es/docs/Web/HTML",
   },
-  {
-    name: "CSS",
-    icon: "/icons/css.png",
-    href: "https://developer.mozilla.org/es/docs/Web/CSS",
-  },
-
   {
     name: "React",
     icon: "/icons/react.png",
@@ -176,14 +159,25 @@ export const techStack = [
     href: "https://es.redux.js.org/",
   },
   {
+    name: "Tailwind",
+    icon: "/icons/tailwind.png",
+    href: "https://tailwindcss.com/",
+  },
+  {
+    name: "CSS",
+    icon: "/icons/css.png",
+    href: "https://developer.mozilla.org/es/docs/Web/CSS",
+  },
+
+  {
     name: "Node",
-    icon: "/icons/node.jpg",
+    icon: "/icons/node.png",
     href: "https://nodejs.org/es/docs/",
   },
 
   {
     name: "Express",
-    icon: "/icons/express.png",
+    icon: "/icons/expressjs.png",
     href: "https://expressjs.com/es/",
   },
 
@@ -202,19 +196,35 @@ export const techStack = [
     icon: "/icons/prisma.png",
     href: "https://www.prisma.io/docs",
   },
+
   {
-    name: "Sheets",
-    icon: "/icons/sheets.png",
-    href: "/",
+    name: "GIT",
+    icon: "/icons/git.png",
+    href: "https://git-scm.com/",
   },
-  // {
-  //   name: "Scrum",
-  //   icon: "/icons/scrum.jpg",
-  //   href: "https://www.scrumguides.org/scrum-guide.html",
-  // },
+  {
+    name: "NPM",
+    icon: "/icons/npm.png",
+    href: "https://www.npmjs.com/",
+  },
+  {
+    name: "Yarn",
+    icon: "/icons/yarn.png",
+    href: "https://yarnpkg.com/",
+  },
   {
     name: "Looker",
     icon: "/icons/looker.png",
     href: "https://docs.looker.com/",
+  },
+  {
+    name: "Sheets",
+    icon: "/icons/sheets.png",
+    href: "https://www.google.com/intl/es/sheets/about/",
+  },
+  {
+    name: "Scrum",
+    icon: "/icons/scrum.png",
+    href: "https://www.scrum.org/",
   },
 ];
