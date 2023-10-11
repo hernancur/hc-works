@@ -3,7 +3,7 @@ import { useRef } from "react";
 import Link from "next/link";
 import { motion, useTransform, useSpring } from "framer-motion";
 
-export default function AppIcon({ mouseX, imgs, href }) {
+export default function AppIcon({ mouseX, imgs, href, target }) {
   let ref = useRef();
 
   let distance = useTransform(mouseX, (val) => {
@@ -16,7 +16,7 @@ export default function AppIcon({ mouseX, imgs, href }) {
   let width = useSpring(widthSync, { mass: 0.1, stiffness: 150, damping: 12 });
 
   return (
-    <Link href={href}>
+    <Link target={target && target} href={href}>
       <motion.div
         ref={ref}
         style={{ width }}

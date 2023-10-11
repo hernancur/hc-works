@@ -46,7 +46,7 @@ export let linkFrontPage = [
     sub: "Henry",
     href: "https://www.soyhenry.com/",
     subTitle:
-      "Guided, mentored and empowered over 1000 students, with the majority working remotely at the moment, unlocking their potencials. My greatest achievement was to transform the data visualization we had in the company, 0 to 100%.",
+      "Guided, mentored and empowered over 1000 students in fullstack, with the majority working remotely at the moment, unlocking their potencials. Also, I improved the data visualization we had in the company for more precise decisions.",
     bttn: "View my work",
   },
   {
@@ -66,7 +66,7 @@ export let linkFrontPage = [
     sub: "CoderHouse",
     href: "https://www.coderhouse.com/",
     subTitle:
-      "Provided comprehensive guidance backend technologies, including NodeJS, Express, SQL, ORM's, and Jest (testing). Dedicated to fostering a deep understanding and ensuring my students were well-prepared for their careers.",
+      "Provided comprehensive guidance in backend technologies: NodeJS, Express, SQL, ORM's, and Jest (testing). Dedicated to fostering a deep understanding and ensuring my students were well-prepared for their careers.",
   },
   {
     date: "Feb 2021 - May 2021",
@@ -75,7 +75,7 @@ export let linkFrontPage = [
     sub: "Cobraticket",
     href: "https://cobraticket.uy/",
     subTitle:
-      "Contributed as a consultant, specializing in web solutions for event ticket sales with focus on database management and structure.",
+      "With focus on database management and structure I contributed as a consultant, specializing in web solution for event-ticket sales.",
   },
   {
     date: "Aug 2020 - Oct 2020",
@@ -84,7 +84,7 @@ export let linkFrontPage = [
     sub: "OWL",
     href: "https://owlfurnitureandobjects.com/",
     subTitle:
-      "Collaborated with OWL building robust and efficient components to power web applications. My responsibilities included creating interactive features that enriched user experiences.",
+      "Collaborated with 'OWL' building robust and efficient components to power web application. My responsibilities included creating interactive features that enriched user experiences.",
   },
 
   {
@@ -113,8 +113,9 @@ export const HeaderLinks = [
     Icon: <PiHouseThin />,
   },
   {
-    href: "/about",
+    href: "https://www.linkedin.com/in/hernan-garcia-fullstack/",
     label: "About",
+    target: "_blank",
     Icon: <PiUserThin />,
   },
   {
@@ -135,6 +136,66 @@ export const techStack = [
   {
     name: "JS",
     icon: "/icons/javascript.jpg",
-    href: "https://es.wikipedia.org/wiki/JavaScript",
+    href: "https://developer.mozilla.org/es/docs/Web/JavaScript",
+  },
+  {
+    name: "HTML",
+    icon: "/icons/html.png",
+    href: "https://developer.mozilla.org/es/docs/Web/HTML",
+  },
+  {
+    name: "CSS",
+    icon: "/icons/css.jpg",
+    href: "https://developer.mozilla.org/es/docs/Web/CSS",
+  },
+  {
+    name: "React",
+    icon: "/icons/react.png",
+    href: "https://es.reactjs.org/",
+  },
+  {
+    name: "Node",
+    icon: "/icons/node.jpg",
+    href: "https://nodejs.org/es/docs/",
+  },
+  {
+    name: "Redux",
+    icon: "/icons/redux.jpg",
+    href: "https://es.redux.js.org/",
+  },
+  {
+    name: "Express",
+    icon: "/icons/express.png",
+    href: "https://expressjs.com/es/",
+  },
+  {
+    name: "GIT",
+    icon: "/icons/git.png",
+    href: "/",
+  },
+  {
+    name: "SQL",
+    icon: "/icons/sql.png",
+    href: "https://www.w3schools.com/sql/",
+  },
+  {
+    name: "Sheets",
+    icon: "/icons/sheets.png",
+    href: "/",
+  },
+  // {
+  //   name: "Sequelize",
+  //   icon: "/icons/sequelize.jpg",
+  //   href: "https://sequelize.org/master/",
+  // },
+  // {
+  //   name: "Scrum",
+  //   icon: "/icons/scrum.jpg",
+  //   href: "https://www.scrumguides.org/scrum-guide.html",
+  // },
+  {
+    name: "Looker",
+    icon: "/icons/looker.jpg",
+    href: "https://docs.looker.com/",
   },
 ];

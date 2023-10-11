@@ -39,7 +39,6 @@ function Expage() {
                   />
                   <div>
                     <h1 className="font-InterBold  text-lg ">{each.title}</h1>
-                    {/* you can add your desired links hrefs in the lnk array n wrap here with href */}
                     <Link
                       className="font-semibold hover:underline  hover:text-orange-600"
                       href={each.href}
