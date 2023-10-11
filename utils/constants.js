@@ -134,10 +134,21 @@ export const HeaderLinks = [
 
 export const techStack = [
   {
-    name: "JS",
+    name: "GIT",
+    icon: "/icons/git.png",
+    href: "/",
+  },
+  {
+    name: "JavaScript",
     icon: "/icons/javascript.jpg",
     href: "https://developer.mozilla.org/es/docs/Web/JavaScript",
   },
+  {
+    name: "TypeScript",
+    icon: "/icons/TS.png",
+    href: "https://www.typescriptlang.org/",
+  },
+
   {
     name: "HTML",
     icon: "/icons/html.png",
@@ -145,38 +156,46 @@ export const techStack = [
   },
   {
     name: "CSS",
-    icon: "/icons/css.jpg",
+    icon: "/icons/css.png",
     href: "https://developer.mozilla.org/es/docs/Web/CSS",
   },
+
   {
     name: "React",
     icon: "/icons/react.png",
     href: "https://es.reactjs.org/",
   },
   {
+    name: "Redux",
+    icon: "/icons/redux.png",
+    href: "https://es.redux.js.org/",
+  },
+  {
     name: "Node",
     icon: "/icons/node.jpg",
     href: "https://nodejs.org/es/docs/",
   },
-  {
-    name: "Redux",
-    icon: "/icons/redux.jpg",
-    href: "https://es.redux.js.org/",
-  },
+
   {
     name: "Express",
     icon: "/icons/express.png",
     href: "https://expressjs.com/es/",
   },
-  {
-    name: "GIT",
-    icon: "/icons/git.png",
-    href: "/",
-  },
+
   {
     name: "SQL",
     icon: "/icons/sql.png",
     href: "https://www.w3schools.com/sql/",
+  },
+  {
+    name: "Sequelize",
+    icon: "/icons/seq.png",
+    href: "https://sequelize.org/",
+  },
+  {
+    name: "Prisma",
+    icon: "/icons/prisma.png",
+    href: "https://www.prisma.io/docs",
   },
   {
     name: "Sheets",
@@ -184,18 +203,13 @@ export const techStack = [
     href: "/",
   },
   // {
-  //   name: "Sequelize",
-  //   icon: "/icons/sequelize.jpg",
-  //   href: "https://sequelize.org/master/",
-  // },
-  // {
   //   name: "Scrum",
   //   icon: "/icons/scrum.jpg",
   //   href: "https://www.scrumguides.org/scrum-guide.html",
   // },
   {
     name: "Looker",
-    icon: "/icons/looker.jpg",
+    icon: "/icons/looker.png",
     href: "https://docs.looker.com/",
   },
 ];
