@@ -167,6 +167,11 @@ export const techStack = [
     href: "https://es.reactjs.org/",
   },
   {
+    name: "Next",
+    icon: "/icons/next.png",
+    href: "https://nextjs.org/",
+  },
+  {
     name: "Redux",
     icon: "/icons/redux.png",
     href: "https://es.redux.js.org/",
