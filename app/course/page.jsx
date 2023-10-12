@@ -61,7 +61,7 @@ function Aboutpage() {
         />
 
         {/* COSTO CURSADA */}
-        <Pricing />
+        {/* <Pricing /> */}
 
         {/* CALL TO ACTION */}
         <Marquee text={"INSCRIPCIONES"} />
