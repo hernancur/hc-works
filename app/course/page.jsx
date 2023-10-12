@@ -24,7 +24,7 @@ function Aboutpage() {
           Entenderás como funcionan las apps que usas todos los dias (Instagram,
           X, BeReal). Pasaremos enseguida a{" "}
           <span style={{ color: "#fd3a02" }}>
-            JAVASCRIPT, HTML, CSS, SQL, entre otras tecnologías.
+            JAVASCRIPT, HTML, CSS, entre otras tecnologías.
           </span>{" "}
           Desde los fundamentos básicos hasta los conceptos avanzados de como se
           construye desde cero una página/aplicación.{" "}
