@@ -126,7 +126,7 @@ export const HeaderLinks = [
     Icon: <PiHouseThin />,
   },
   {
-    href: "/about",
+    href: "https://www.linkedin.com/in/hernan-garcia-fullstack/",
     label: "About",
     Icon: <PiUserThin />,
   },
