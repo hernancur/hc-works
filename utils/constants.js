@@ -6,17 +6,15 @@ export const aboutImgs = [
 ];
 
 export const courseImgs = [
-  "/course/code.png",
+  "/course/pc.png",
   "/img/workshop.jpg",
-  "/course/code.png",
+  "/course/pc.png",
   "/img/workshop.jpg",
-  "/course/code.png",
+  "/course/pc.png",
   "/img/workshop.jpg",
-  "/course/code.png",
+  "/course/pc.png",
   "/img/workshop.jpg",
-  "/course/code.png",
-  "/img/workshop.jpg",
-  "/course/code.png",
+  "/course/pc.png",
   "/img/workshop.jpg",
 ];
 
