@@ -5,6 +5,21 @@ export const aboutImgs = [
   "/img/workshop.jpg",
 ];
 
+export const courseImgs = [
+  "/course/code.png",
+  "/img/workshop.jpg",
+  "/course/code.png",
+  "/img/workshop.jpg",
+  "/course/code.png",
+  "/img/workshop.jpg",
+  "/course/code.png",
+  "/img/workshop.jpg",
+  "/course/code.png",
+  "/img/workshop.jpg",
+  "/course/code.png",
+  "/img/workshop.jpg",
+];
+
 // Projects
 export const projectsFrontPage = [
   {
