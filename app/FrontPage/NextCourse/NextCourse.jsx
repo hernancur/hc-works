@@ -11,7 +11,7 @@ function NextCourse() {
     },
     {
       title: "React hooks",
-      startDate: "08/07/2023",
+      startDate: "Finished",
       imgSrc: "/course/code.png",
       completed: true,
     },
