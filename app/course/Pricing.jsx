@@ -9,14 +9,14 @@ export default function Pricing() {
           No tiene costo comenzar el curso.{" "}
           <span style={{ color: "#fd3a02" }}>
             {" "}
-            El primer módulo es GRATUITO
+            El primer y segundo módulo son GRATUITOS
           </span>{" "}
           y abierto a todo público, podes anotarte y 'probar' si no estas
           seguro/a, tal vez descubrís algo que te apasiona, si estás acá ya es
           una razón!
         </p>
         <p className=" text-center text-neutral-400 text-lg max-w-3xl mb-8">
-          El resto de los módulos (2,3,4) tienen un costo
+          Los últimos dos módulos (3,4) tienen un costo
           <span style={{ color: "#fd3a02" }}> único y total</span> de $900 pesos
           uruguayos - se puede pagar hasta en dos cuotas -
         </p>
