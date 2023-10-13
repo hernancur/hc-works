@@ -39,11 +39,10 @@ export default function Modules() {
           Módulo 3
         </h5>
         <p className=" text-center text-neutral-400 text-lg max-w-3xl">
-          <span style={{ color: "#fd3a02" }}>
-            HTML avanzado, estructura y optimización
-          </span>
-          . Este tercer módulo se centra en las diferentes habilidades que nos
-          da HTML al momento de construir una página.
+          <span style={{ color: "#fd3a02" }}>HTML avanzado, CSS</span>. Este
+          tercer módulo se centra en las diferentes habilidades que nos da HTML
+          al momento de construir una página. Y aprenderás como tu página puede
+          'verse como tu quieras y ser amigable para quienes la usen'.
         </p>
         <h5
           className="text-center my-4 font-InterBold"
@@ -52,12 +51,13 @@ export default function Modules() {
           Módulo 4
         </h5>
         <p className=" text-center text-neutral-400 text-lg max-w-3xl mb-12">
+          <span style={{ color: "#fd3a02" }}>React</span>. En el último módulo
+          antes de certificarte, veremos los conceptos básicos de React,
+          tecnología actual para la creacion de webs{" "}
           <span style={{ color: "#fd3a02" }}>
-            CSS avanzado, diseño y experiencia de usuario
-          </span>
-          . En el último módulo antes de certificarte, aprenderás como hacer que
-          tu página 'se vea como tu quieras y sea amigable para quienes la
-          usen'.
+            Instagram - Discord - Facebook se crearon usando React{" "}
+          </span>{" "}
+          que es una fusión de Javascript + HTML + CSS.
         </p>
         <p className="mb-12" style={{ color: "#fd3a02" }}>
           Para obtener el CERTIFICADO es necesaria la entrega del proyecto que

@@ -32,8 +32,8 @@ function Frpage() {
           >
             Hernan Garcia
           </h2>
-          <Link href={"https://instagram.com/hernan.cur"}>
-            <span className="text-neutral-500 ">@hernan.cur</span>
+          <Link href={"https://www.linkedin.com/in/hernan-garcia-fullstack/"}>
+            <span className="text-neutral-500 ">@hernan</span>
           </Link>
           <Status isAvailbale />
         </div>
@@ -52,16 +52,16 @@ function Frpage() {
           My experience has enabled me to learn the business, develop data
           driven thinking for accurate decision making, and time management.
         </p>
-        {/* <p className="dark:text-neutral-300  font-InterMedium  mt-3">
+        <p className="dark:text-neutral-300  font-InterMedium  mt-3">
           On the other hand I'm a F1 fan 🏎️ and an active 5-a-side football
           player ⚽. Passionate about helping people providing them with
           solutions and knowledge that allow them to improve their quality of
           life.
-        </p> */}
+        </p>
         <Link
           target="blank"
           href={
-            "https://drive.google.com/file/d/1oZWUs5O5Nd4ytoRzU5hspc-VaWx2a3jz/view?usp=sharing"
+            "https://drive.google.com/file/d/1O7mdswIpz0zCAJhbey52UsWldQe6wX9N/view?usp=sharing"
           }
         >
           <button
