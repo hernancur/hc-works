@@ -31,15 +31,6 @@ export const projectsFrontPage = [
   },
   {
     status: null,
-    link: "https://pf-beat-connect.vercel.app/",
-    year: 2022,
-    imgLink: "/img/beat2.jpg",
-    imgLink2: "/img/beat1.jpg",
-    title: "Product Owner | Beat Connect",
-    subT: "Alongside my students we designed a solution that simplifies the process of finding and purchasing backing tracks for songs, making life easier for musicians and producers around the world.",
-  },
-  {
-    status: null,
     link: "https://owlfurnitureandobjects.com/",
     year: 2020,
     imgLink: "/img/owl3.jpg",
@@ -47,6 +38,25 @@ export const projectsFrontPage = [
     title: "Fullstack | OWL",
     subT: "Collaborated with OWL, Barcelona-based design studio known for crafting one-of-a-kind furniture and objects. Helping bring their unique creations to the digital world.",
   },
+  {
+    status: null,
+    link: "https://www.floridacowork.com.uy/",
+    year: 2022,
+    imgLink: "/img/workshop.jpg",
+    imgLink2: "/img/workshop2.jpg",
+    title: "Speaker | How do apps work?",
+    subT: "Keynote speaker at high impact technology workshop that we organized together with Florida CoWork, the objective was to bring knowledge and opportunities in the technology market to young and interested people in the city.",
+  },
+  {
+    status: null,
+    link: "https://pf-beat-connect.vercel.app/",
+    year: 2022,
+    imgLink: "/img/beat2.jpg",
+    imgLink2: "/img/beat1.jpg",
+    title: "Product Owner | Beat Connect",
+    subT: "Alongside my students we designed a solution that simplifies the process of finding and purchasing backing tracks for songs, making life easier for musicians and producers around the world.",
+  },
+
 ];
 
 // Experience
