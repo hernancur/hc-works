@@ -267,4 +267,9 @@ export const techStack = [
     icon: "/icons/scrum.png",
     href: "https://www.scrum.org/",
   },
+  {
+    name: "Jira",
+    icon: "/icons/jira.png",
+    href: "https://www.scrum.org/",
+  },
 ];
