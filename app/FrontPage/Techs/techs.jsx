@@ -3,7 +3,6 @@ import Link from "next/link";
 import useHovered from "../useHovered";
 import Image from "next/image";
 import { techStack } from "@/utils/constants";
-import { useState } from "react";
 
 export default function Techs() {
   const { hoveredTech, enterTech, leaveTech } = useHovered();
@@ -24,7 +23,17 @@ export default function Techs() {
               height: "110px",
             }}
           >
-            <Image width={50} height={50} src={tech.icon} alt={tech.name} />
+            <div
+              style={{ width: "50px", height: "55px", position: "relative" }}
+            >
+              <Image
+                objectFit="contain"
+                width={50}
+                height={55}
+                src={tech.icon}
+                alt={tech.name}
+              />
+            </div>
 
             <h3 className={`font-InterBold text-gray-500 text-sm mt-2`}>
               {tech.name}

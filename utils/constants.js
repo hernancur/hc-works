@@ -232,7 +232,11 @@ export const techStack = [
     icon: "/icons/prisma.png",
     href: "https://www.prisma.io/docs",
   },
-
+  {
+    name: "GoogleCloud",
+    icon: "/icons/googleCloud.png",
+    href: "https://cloud.google.com/",
+  },
   {
     name: "GIT",
     icon: "/icons/git.png",
