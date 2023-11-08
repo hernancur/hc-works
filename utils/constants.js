@@ -270,6 +270,6 @@ export const techStack = [
   {
     name: "Jira",
     icon: "/icons/jira.png",
-    href: "https://www.scrum.org/",
+    href: "https://www.atlassian.com/es/software/jira",
   },
 ];
