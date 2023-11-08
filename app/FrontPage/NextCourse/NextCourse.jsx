@@ -10,7 +10,7 @@ function NextCourse() {
       completed: true,
     },
     {
-      title: "React hooks",
+      title: "React custom hooks usage",
       startDate: "Finished",
       imgSrc: "/course/code.png",
       completed: true,
@@ -23,7 +23,7 @@ function NextCourse() {
         return (
           <Link
             key={course.title}
-            href={course.completed ? "#courses" : "/course"}
+            href={course.completed ? "#motion" : "/course"}
           >
             <div
               className="mt-6 hover:scale-110 w-full bg-neutral-800/20 p-4 rounded-lg flex flex-col md:flex-row items-center justify-center"
@@ -31,7 +31,7 @@ function NextCourse() {
             >
               <h3
                 className={`text-neutral-500 text-xs font-InterBold uppercase mr-3 ${
-                  course.completed ? "line-through" : ""
+                  course.completed ? "" : ""
                 }  `}
               >
                 {course.completed ? null : "Next Course"}
@@ -46,8 +46,8 @@ function NextCourse() {
                 />
                 <div>
                   <h4
-                    className={`font-extrabold font-InterBlack text-xl dark:text-white text-center ${
-                      course.completed ? "line-through" : ""
+                    className={`font-InterBlack text-xl dark:text-white text-center ${
+                      course.completed ? "font-italic" : "font-extrabold"
                     } `}
                   >
                     {course.title}
