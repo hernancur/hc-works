@@ -7,7 +7,7 @@ function NextCourse() {
       title: "Intro to web development",
       startDate: "10/23/2023",
       imgSrc: "/course/pc.png",
-      completed: false,
+      completed: true,
     },
     {
       title: "React hooks",
@@ -18,10 +18,13 @@ function NextCourse() {
   ];
 
   return (
-    <div>
+    <div id="courses">
       {courses.map(function (course) {
         return (
-          <Link key={course.title} href={course.completed ? "/" : "/course"}>
+          <Link
+            key={course.title}
+            href={course.completed ? "#courses" : "/course"}
+          >
             <div
               className="mt-6 hover:scale-110 w-full bg-neutral-800/20 p-4 rounded-lg flex flex-col md:flex-row items-center justify-center"
               style={{ transition: "transform 0.2s ease-in-out" }}

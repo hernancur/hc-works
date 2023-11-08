@@ -21,6 +21,15 @@ export const courseImgs = [
 // Projects
 export const projectsFrontPage = [
   {
+    status: null,
+    link: "https://mascotopia.vercel.app/",
+    year: 2023,
+    imgLink: "/img/mascotopia1.jpg",
+    imgLink2: "/img/mascotopia2.jpg",
+    title: "Mascotopia | Re-founding pets with AI",
+    subT: "A solution for lost/found pets driven by AI with Intelligent image recognition and virtual assistant on any needs/doubts you may have.",
+  },
+  {
     status: "Progress",
     link: "https://muestra-landing.vercel.app/",
     year: 2023,
@@ -56,7 +65,6 @@ export const projectsFrontPage = [
     title: "Product Owner | Beat Connect",
     subT: "Alongside my students we designed a solution that simplifies the process of finding and purchasing backing tracks for songs, making life easier for musicians and producers around the world.",
   },
-
 ];
 
 // Experience

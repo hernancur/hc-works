@@ -7,7 +7,6 @@ import { useState } from "react";
 
 export default function Techs() {
   const { hoveredTech, enterTech, leaveTech } = useHovered();
-  const [isFlipped, setIsFlipped] = useState(false);
 
   return (
     <div className="flex gap-4 my-6 flex-wrap justify-center">

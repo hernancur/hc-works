@@ -12,7 +12,7 @@ export default function Marquee({ text }) {
           variants={marqueeVariants}
           animate="animate"
         >
-          <div className=" flex gap-x-5 mt-2 uppercase font-semibold justify-evenly text-sm text-neutral-700">
+          <div className=" flex gap-x-5 mt-2 uppercase font-semibold justify-evenly text-m text-neutral-700">
             {text} ✦ {text} ✦ {text} ✦ {text} ✦ {text} ✦ {text} ✦ {text} ✦{" "}
             {text} ✦{text} ✦ {text} ✦ {text} ✦ {text} ✦ {text} ✦ {text} ✦ {text}{" "}
             ✦ {text} ✦{text} ✦ {text} ✦ {text} ✦ {text} ✦ {text} ✦ {text} ✦{" "}

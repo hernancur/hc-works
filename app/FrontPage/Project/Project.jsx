@@ -32,7 +32,7 @@ export default function Projects() {
 
             <div>
               <div className="w-fit flex items-center gap-x-2 ">
-                <div className=" px-2 py-1 text-xs font-semibold   border rounded-full dark:border-neutral-700">
+                <div className="px-2 py-1 text-xs font-semibold   border rounded-full dark:border-neutral-700">
                   <span>{each.year}</span>
                 </div>
                 <div className=" flex items-center gap-x-3">
