@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import Status from "@/app/Status/page";
 import Link from "next/link";
 import Image from "next/image";
@@ -16,7 +15,7 @@ function Frpage() {
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
+      animate={controls}
       className="relative max-w-5xl mx-auto px-8"
     >
       <div className="mt-32">
