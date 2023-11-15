@@ -20,23 +20,15 @@ export const courseImgs = [
 
 // Projects
 export const projectsFrontPage = [
-  {
-    status: null,
-    link: "https://mascotopia.vercel.app/",
-    year: 2023,
-    imgLink: "/img/mascotopia1.jpg",
-    imgLink2: "/img/mascotopia2.jpg",
-    title: "Mascotopia | Re-founding pets with AI",
-    subT: "A solution for lost/found pets driven by AI with Intelligent image recognition and virtual assistant on any needs/doubts you may have.",
-  },
+
   {
     status: null,
     link: "https://luasu.vercel.app/",
     year: 2023,
     imgLink: "/img/luasu1.jpg",
     imgLink2: "/img/luasu2.jpg",
-    title: "Freelance | Massage therapist website",
-    subT: "We attend 24/7 to potential clients giving information about massage services, opinions, schedules and contact.",
+    title: "Massage therapist website | Freelance",
+    subT: "We attend 24/7 to potential clients giving information about massage services, opinions, schedules and contact. We'll also add a payment method in the future.",
   },
   {
     status: null,
@@ -54,7 +46,16 @@ export const projectsFrontPage = [
     imgLink: "/img/workshop.jpg",
     imgLink2: "/img/workshop2.jpg",
     title: "Speaker | How do apps work?",
-    subT: "Keynote speaker at high impact technology workshop that we organized together with Florida CoWork, the objective was to bring knowledge and opportunities in the technology market to young and interested people in the city.",
+    subT: "The objective was to bring knowledge and opportunities in the technology market to young and interested people in the city. I was the keynote speaker. Organized together with Florida CoWork.",
+  },
+  {
+    status: null,
+    link: "https://mascotopia.vercel.app/",
+    year: 2023,
+    imgLink: "/img/mascotopia1.jpg",
+    imgLink2: "/img/mascotopia2.jpg",
+    title: "Mascotopia | Re-founding pets with AI",
+    subT: "A solution for lost/found pets driven by AI with Intelligent image recognition and virtual assistant on any needs/doubts you may have.",
   },
   {
     status: null,
