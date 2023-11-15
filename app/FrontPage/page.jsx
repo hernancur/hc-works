@@ -73,7 +73,7 @@ function Frpage() {
           >
             <button
               style={{ transition: "transform 0.2s ease-in-out" }}
-              className="mt-10 border border-neutral-700/30 rounded-md p-2 w-full lg:w-44 bg-neutral-800/20 text-sm dark:text-neutral-400 font-semibold hover:scale-110"
+              className="mt-10 rounded-md p-2 w-full lg:w-44 bg-orange/70 text-white  dark:text-white font-semibold hover:scale-110"
             >
               View resume
             </button>

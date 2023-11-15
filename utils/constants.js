@@ -111,7 +111,7 @@ export let linkFrontPage = [
   {
     date: "Aug 2020 - Oct 2020",
     imgLink: "/img/owl.jpg",
-    title: "Freelance | Fullstack developer",
+    title: "Freelance | Development consultant",
     sub: "OWL",
     href: "https://owlfurnitureandobjects.com/",
     subTitle:
