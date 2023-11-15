@@ -20,24 +20,14 @@ export const courseImgs = [
 
 // Projects
 export const projectsFrontPage = [
-
   {
     status: null,
     link: "https://luasu.vercel.app/",
     year: 2023,
     imgLink: "/img/luasu1.jpg",
     imgLink2: "/img/luasu2.jpg",
-    title: "Massage therapist website | Freelance",
+    title: "Massage therapist website | Freelance work",
     subT: "We attend 24/7 to potential clients giving information about massage services, opinions, schedules and contact. We'll also add a payment method in the future.",
-  },
-  {
-    status: null,
-    link: "https://owlfurnitureandobjects.com/",
-    year: 2020,
-    imgLink: "/img/owl3.jpg",
-    imgLink2: "/img/owl2.jpg",
-    title: "Fullstack | OWL",
-    subT: "Collaborated with OWL, Barcelona-based design studio known for crafting one-of-a-kind furniture and objects. Helping bring their unique creations to the digital world.",
   },
   {
     status: null,
@@ -45,17 +35,8 @@ export const projectsFrontPage = [
     year: 2022,
     imgLink: "/img/workshop.jpg",
     imgLink2: "/img/workshop2.jpg",
-    title: "Speaker | How do apps work?",
+    title: "How do apps work? | Speaker",
     subT: "The objective was to bring knowledge and opportunities in the technology market to young and interested people in the city. I was the keynote speaker. Organized together with Florida CoWork.",
-  },
-  {
-    status: null,
-    link: "https://mascotopia.vercel.app/",
-    year: 2023,
-    imgLink: "/img/mascotopia1.jpg",
-    imgLink2: "/img/mascotopia2.jpg",
-    title: "Mascotopia | Re-founding pets with AI",
-    subT: "A solution for lost/found pets driven by AI with Intelligent image recognition and virtual assistant on any needs/doubts you may have.",
   },
   {
     status: null,
@@ -63,8 +44,26 @@ export const projectsFrontPage = [
     year: 2022,
     imgLink: "/img/beat2.jpg",
     imgLink2: "/img/beat1.jpg",
-    title: "Product Owner | Beat Connect",
+    title: "Beat Connect | Product Owner",
     subT: "Alongside my students we designed a solution that simplifies the process of finding and purchasing backing tracks for songs, making life easier for musicians and producers around the world.",
+  },
+  {
+    status: null,
+    link: "https://mascotopia.vercel.app/",
+    year: 2023,
+    imgLink: "/img/mascotopia1.jpg",
+    imgLink2: "/img/mascotopia2.jpg",
+    title: "Mascotopia | Personal project",
+    subT: "A solution for lost/found pets driven by AI with Intelligent image recognition and virtual assistant on any needs/doubts you may have.",
+  },
+  {
+    status: null,
+    link: "https://owlfurnitureandobjects.com/",
+    year: 2020,
+    imgLink: "/img/owl3.jpg",
+    imgLink2: "/img/owl2.jpg",
+    title: "OWL | Consultant",
+    subT: "Collaborated with OWL, Barcelona-based design studio known for crafting one-of-a-kind furniture and objects. Helping bring their unique creations to the digital world.",
   },
 ];
 
