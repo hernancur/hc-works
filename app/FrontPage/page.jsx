@@ -51,8 +51,9 @@ function Frpage() {
             About Me
           </h3>
           <p className="dark:text-neutral-300  font-InterMedium  mt-3">
-            Web developer, Entrepreneur and Instructor with +4 years of experience.
-            Specialized in web presence, growing, development and attention to detail.
+            Web developer, Entrepreneur and Instructor with +4 years of
+            experience. Specialized in web presence, growing, development and
+            attention to detail.
           </p>
           <p className="dark:text-neutral-300  font-InterMedium  mt-3">
             My experience has enabled me to learn the business, develop data
