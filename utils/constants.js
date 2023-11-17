@@ -40,6 +40,15 @@ export const projectsFrontPage = [
   },
   {
     status: null,
+    link: "https://owlfurnitureandobjects.com/",
+    year: 2020,
+    imgLink: "/img/owl3.jpg",
+    imgLink2: "/img/owl2.jpg",
+    title: "OWL | Consultant",
+    subT: "Collaborated with OWL, Barcelona-based design studio known for crafting one-of-a-kind furniture and objects. Helping bring their unique creations to the digital world.",
+  },
+  {
+    status: null,
     link: "https://pf-beat-connect.vercel.app/",
     year: 2022,
     imgLink: "/img/beat2.jpg",
@@ -56,15 +65,7 @@ export const projectsFrontPage = [
   //   title: "Mascotopia | Personal project",
   //   subT: "A solution for lost/found pets driven by AI with Intelligent image recognition and virtual assistant on any needs/doubts you may have.",
   // },
-  {
-    status: null,
-    link: "https://owlfurnitureandobjects.com/",
-    year: 2020,
-    imgLink: "/img/owl3.jpg",
-    imgLink2: "/img/owl2.jpg",
-    title: "OWL | Consultant",
-    subT: "Collaborated with OWL, Barcelona-based design studio known for crafting one-of-a-kind furniture and objects. Helping bring their unique creations to the digital world.",
-  },
+
 ];
 
 // Experience
