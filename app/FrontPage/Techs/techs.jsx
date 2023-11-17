@@ -8,7 +8,7 @@ export default function Techs() {
   const { hoveredTech, enterTech, leaveTech } = useHovered();
 
   return (
-    <div className="flex gap-4 my-6 flex-wrap justify-center">
+    <div className="group flex gap-4 my-6 flex-wrap justify-center">
       {techStack.map((tech, i) => (
         <Link key={i} target="blank" href={tech.href}>
           <div
@@ -29,7 +29,7 @@ export default function Techs() {
               <Image width={50} height={55} src={tech.icon} alt={tech.name} />
             </div>
 
-            <h3 className={`font-InterBold text-gray-500 text-sm mt-2`}>
+            <h3 className={` font-InterBold text-gray-500 text-sm mt-2 `}>
               {tech.name}
             </h3>
           </div>
