@@ -65,7 +65,6 @@ export const projectsFrontPage = [
   //   title: "Mascotopia | Personal project",
   //   subT: "A solution for lost/found pets driven by AI with Intelligent image recognition and virtual assistant on any needs/doubts you may have.",
   // },
-
 ];
 
 // Experience
@@ -206,6 +205,16 @@ export const techStack = [
     href: "https://developer.mozilla.org/es/docs/Web/CSS",
   },
 
+  {
+    name: "Figma",
+    icon: "/icons/figma.png",
+    href: "https://figma.com",
+  },
+  {
+    name: "Photoshop",
+    icon: "/icons/ps.png",
+    href: "https://www.adobe.com/es/products/photoshop.html",
+  },
   {
     name: "Node",
     icon: "/icons/node.png",
