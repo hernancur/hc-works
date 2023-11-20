@@ -68,7 +68,7 @@ function Frpage() {
           <Link
             target="blank"
             href={
-              "https://drive.google.com/file/d/1O7mdswIpz0zCAJhbey52UsWldQe6wX9N/view?usp=sharing"
+              "https://drive.google.com/file/d/1CiD7WjlVllA5K9UbYzS2eLI3oe5Ro5Zf/view?usp=sharing"
             }
           >
             <button

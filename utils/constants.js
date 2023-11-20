@@ -35,7 +35,7 @@ export const projectsFrontPage = [
     year: 2022,
     imgLink: "/img/workshop.jpg",
     imgLink2: "/img/workshop2.jpg",
-    title: "How do apps work? | Speaker",
+    title: "How do apps work? | Speaker at Florida Cowork",
     subT: "The objective was to bring knowledge and opportunities in the technology market to young and interested people in the city. I was the keynote speaker. Organized together with Florida CoWork.",
   },
   {
@@ -102,7 +102,7 @@ export let linkFrontPage = [
   {
     date: "Feb 2021 - May 2021",
     imgLink: "/img/cobra.jpg",
-    title: "Freelance | Development consultant",
+    title: "Development consultant | Freelance",
     sub: "Cobraticket",
     href: "https://cobraticket.uy/",
     subTitle:
@@ -111,7 +111,7 @@ export let linkFrontPage = [
   {
     date: "Aug 2020 - Oct 2020",
     imgLink: "/img/owl.jpg",
-    title: "Freelance | Development consultant",
+    title: "Development consultant | Freelance",
     sub: "OWL",
     href: "https://owlfurnitureandobjects.com/",
     subTitle:
