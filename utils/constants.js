@@ -99,15 +99,15 @@ export let linkFrontPage = [
     subTitle:
       "Provided comprehensive guidance in backend technologies: NodeJS, Express, SQL, ORM's, and Jest (testing). Dedicated to fostering a deep understanding and ensuring my students were well-prepared for their careers.",
   },
-  {
-    date: "Feb 2021 - May 2021",
-    imgLink: "/img/cobra.jpg",
-    title: "Development consultant | Freelance",
-    sub: "Cobraticket",
-    href: "https://cobraticket.uy/",
-    subTitle:
-      "With focus on database management and structure I contributed as a consultant, specializing in web solution for event-ticket sales.",
-  },
+  // {
+  //   date: "Feb 2021 - May 2021",
+  //   imgLink: "/img/cobra.jpg",
+  //   title: "Development consultant | Freelance",
+  //   sub: "Cobraticket",
+  //   href: "https://cobraticket.uy/",
+  //   subTitle:
+  //     "With focus on database management and structure I contributed as a consultant, specializing in web solution for event-ticket sales.",
+  // },
   {
     date: "Aug 2020 - Oct 2020",
     imgLink: "/img/owl.jpg",
