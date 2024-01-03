@@ -293,3 +293,16 @@ export const techStack = [
     href: "https://www.atlassian.com/es/software/jira",
   },
 ];
+
+export const techLearning = [
+  {
+    name: "E. Hacking",
+    icon: "/icons/python.png",
+    href: "https://www.python.org/",
+  },
+  {
+    name: "Docker",
+    icon: "/icons/docker.png",
+    href: "https://www.docker.com/",
+  },
+];

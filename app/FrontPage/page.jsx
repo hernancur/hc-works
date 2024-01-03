@@ -6,6 +6,7 @@ import Image from "next/image";
 import Marquee from "./Marquee/Marquee";
 import useHovered from "./useHovered";
 import Techs from "./Techs/techs";
+import Learning from "./Techs/learning";
 import Projects from "./Project/Project";
 import NextCourse from "./NextCourse/NextCourse";
 
@@ -86,8 +87,11 @@ function Frpage() {
         <Marquee text={"LEARN WITH ME"} />
         <NextCourse />
 
-        <Marquee text={"Tech stack"} />
+        <Marquee text={"STACK"} />
         <Techs />
+
+        <Marquee text={"LEARNING"} />
+        <Learning />
       </div>
     </motion.div>
   );

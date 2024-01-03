@@ -2,19 +2,19 @@
 import Link from "next/link";
 import useHovered from "../useHovered";
 import Image from "next/image";
-import { techStack } from "@/utils/constants";
+import { techLearning } from "@/utils/constants";
 
-export default function Techs() {
+export default function Learning() {
   const { hoveredTech, enterTech, leaveTech } = useHovered();
 
   return (
     <div className="group flex gap-4 my-6 flex-wrap justify-center">
-      {techStack.map((tech, i) => (
+      {techLearning.map((tech, i) => (
         <Link key={i} target="blank" href={tech.href}>
           <div
             className={`rounded-lg p-3 border border-neutral-700 dark:border-neutral-800 ${
               hoveredTech[i] ? "hover:scale-110" : ""
-            } flex flex-col align-center items-center justify-center `}
+            } flex flex-col align-center items-center justify-center text-center `}
             onMouseEnter={() => enterTech(i)}
             onMouseLeave={() => leaveTech(i)}
             style={{
