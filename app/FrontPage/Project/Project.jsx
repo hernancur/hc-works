@@ -61,11 +61,21 @@ export default function Projects() {
                 <Link target="blank" href={each.link}>
                   <button
                     style={{ transition: "transform 0.2s ease-in-out" }}
-                    className="mt-11 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 w-full bg-white dark:bg-neutral-800/10 text-sm dark:text-neutral-400 font-semibold shadow-md   hover:scale-110 "
+                    className="mt-8 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 w-full bg-white dark:bg-neutral-800/10 text-sm dark:text-neutral-400 font-semibold shadow-md   hover:scale-110 "
                   >
-                    View
+                    Visit 
                   </button>
                 </Link>
+                {each.video && (
+                  <Link target="blank" href={each.video}>
+                    <button
+                      style={{ transition: "transform 0.2s ease-in-out" }}
+                      className="ml-4 mt-8 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 w-full bg-white dark:bg-neutral-800/10 text-sm dark:text-neutral-400 font-semibold shadow-md   hover:scale-110 "
+                    >
+                      Video
+                    </button>
+                  </Link>
+                )}
               </div>
             </div>
           </div>

@@ -22,6 +22,16 @@ export const courseImgs = [
 export const projectsFrontPage = [
   {
     status: null,
+    link: "https://pov-chat.netlify.app/",
+    year: 2023,
+    imgLink: "/img/pov1.jpg",
+    imgLink2: "/img/pov2.jpg",
+    video: "https://www.youtube.com/watch?v=zVYf9YKeG3A",
+    title: "POV | Project Manager & Developer",
+    subT: "Chat with your favorites celebrity never was so easy. Comment, react, access content and more. The idea aims to address upcoming challenges in content creation, presenting a fresh proposal for their renewal.",
+  },
+  {
+    status: null,
     link: "https://luasu.vercel.app/",
     year: 2023,
     imgLink: "/img/luasu1.jpg",
