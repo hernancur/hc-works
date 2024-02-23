@@ -297,9 +297,19 @@ export const techStack = [
 
 export const techLearning = [
   {
-    name: "E. Hacking",
-    icon: "/icons/python.png",
-    href: "https://www.python.org/",
+    name: "Nest",
+    icon: "/icons/nest.webp",
+    href: "https://nestjs.com/"
+  },
+  {
+    name: "SNS",
+    icon: "/icons/aws.png",
+    href: "https://aws.amazon.com/es/sns/"
+  },
+  {
+    name: "LAMBDA",
+    icon: "/icons/awsnaranja.png",
+    href: "https://aws.amazon.com/es/pm/lambda/"
   },
   {
     name: "Docker",
