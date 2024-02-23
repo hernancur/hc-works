@@ -32,6 +32,15 @@ export const projectsFrontPage = [
   },
   {
     status: null,
+    link: "https://www.floridacowork.com.uy/",
+    year: 2022,
+    imgLink: "/img/workshop.jpg",
+    imgLink2: "/img/workshop2.jpg",
+    title: "How do apps work? | Speaker at Florida Cowork",
+    subT: "The objective was to bring knowledge and opportunities in the technology market to young and interested people in the city. I was the keynote speaker. Organized together with Florida CoWork.",
+  },
+  {
+    status: null,
     link: "https://luasu.vercel.app/",
     year: 2023,
     imgLink: "/img/luasu1.jpg",
@@ -41,12 +50,12 @@ export const projectsFrontPage = [
   },
   {
     status: null,
-    link: "https://www.floridacowork.com.uy/",
-    year: 2022,
-    imgLink: "/img/workshop.jpg",
-    imgLink2: "/img/workshop2.jpg",
-    title: "How do apps work? | Speaker at Florida Cowork",
-    subT: "The objective was to bring knowledge and opportunities in the technology market to young and interested people in the city. I was the keynote speaker. Organized together with Florida CoWork.",
+    link: "https://mascotopia.vercel.app/",
+    year: 2023,
+    imgLink: "/img/mascotopia1.jpg",
+    imgLink2: "/img/mascotopia2.jpg",
+    title: "Mascotopia | Project Manager & Developer",
+    subT: "As a two team members, we made and offer a solution for lost/found pets driven by AI with Intelligent image recognition and virtual assistant on any needs/doubts you may have.",
   },
   {
     status: null,
@@ -66,15 +75,7 @@ export const projectsFrontPage = [
     title: "Beat Connect | Product Owner",
     subT: "Alongside my students we designed a solution that simplifies the process of finding and purchasing backing tracks for songs, making life easier for musicians and producers around the world.",
   },
-  // {
-  //   status: null,
-  //   link: "https://mascotopia.vercel.app/",
-  //   year: 2023,
-  //   imgLink: "/img/mascotopia1.jpg",
-  //   imgLink2: "/img/mascotopia2.jpg",
-  //   title: "Mascotopia | Personal project",
-  //   subT: "A solution for lost/found pets driven by AI with Intelligent image recognition and virtual assistant on any needs/doubts you may have.",
-  // },
+
 ];
 
 // Experience
