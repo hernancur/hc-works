@@ -50,6 +50,15 @@ export const projectsFrontPage = [
   },
   {
     status: null,
+    link: "https://apple-by-hernan.vercel.app/",
+    year: 2023,
+    imgLink: "/img/apple1.jpg",
+    imgLink2: "/img/apple2.jpg",
+    title: "Apple 3D | iPhone presentation",
+    subT: "Web with three-dimensional interactions showing the iphone 14 Max pro, containing a 3D viewer, colors selection, and Apple's brand image. ",
+  },
+  {
+    status: null,
     link: "https://mascotopia.vercel.app/",
     year: 2023,
     imgLink: "/img/mascotopia1.jpg",
