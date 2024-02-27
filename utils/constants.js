@@ -91,6 +91,16 @@ export const projectsFrontPage = [
 
 export let linkFrontPage = [
   {
+    date: "Jan 2024 - Present",
+    imgLink: "/icons/cencopng.png",
+    title: "Ssr. Developer 1",
+    sub: "Cencosud",
+    href: "https://www.cencosud.com/",
+    subTitle:
+    "Developer focused on cloud, backend and product services. Internal project management. I am currently working with AWS (SNS, Lambdas), Typescript, Nest, Docker and Databases.",
+    bttn: "View my work",
+  },
+  {
     date: "Apr 2022 - Aug 2023",
     imgLink: "/img/henry.jpg",
     title: "Web development Instructor",
