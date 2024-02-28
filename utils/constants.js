@@ -26,7 +26,6 @@ export const projectsFrontPage = [
     year: 2023,
     imgLink: "/img/pov1.jpg",
     imgLink2: "/img/pov2.jpg",
-    video: "https://www.youtube.com/watch?v=zVYf9YKeG3A",
     title: "POV | Project Manager & Developer",
     subT: "Chat with your favorites celebrity never was so easy. Comment, react, access content and more. The idea aims to address upcoming challenges in content creation, presenting a fresh proposal for their renewal.",
   },
@@ -84,7 +83,6 @@ export const projectsFrontPage = [
     title: "Beat Connect | Product Owner",
     subT: "Alongside my students we designed a solution that simplifies the process of finding and purchasing backing tracks for songs, making life easier for musicians and producers around the world.",
   },
-
 ];
 
 // Experience
@@ -97,7 +95,7 @@ export let linkFrontPage = [
     sub: "Cencosud",
     href: "https://www.cencosud.com/",
     subTitle:
-    "Developer focused on cloud, backend and product services. Internal project management. I am currently working with AWS (SNS, Lambdas), Typescript, Nest, Docker and Databases.",
+      "Developer focused on cloud, backend and product services. Internal project management. I am currently working with AWS (SNS, Lambdas), Typescript, Nest, Docker and Databases.",
     bttn: "View my work",
   },
   {
@@ -318,17 +316,17 @@ export const techLearning = [
   {
     name: "Nest",
     icon: "/icons/nest.webp",
-    href: "https://nestjs.com/"
+    href: "https://nestjs.com/",
   },
   {
     name: "SNS",
     icon: "/icons/aws.png",
-    href: "https://aws.amazon.com/es/sns/"
+    href: "https://aws.amazon.com/es/sns/",
   },
   {
     name: "LAMBDA",
     icon: "/icons/awsnaranja.png",
-    href: "https://aws.amazon.com/es/pm/lambda/"
+    href: "https://aws.amazon.com/es/pm/lambda/",
   },
   {
     name: "Docker",

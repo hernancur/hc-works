@@ -3,7 +3,7 @@ import FrontPage from "@/app/FrontPage/page";
 
 function page() {
   return (
-    <div className="max-w-5xl mx-auto  px-10">
+    <div className="max-w-max mx-auto  px-10">
       <FrontPage />
     </div>
   );

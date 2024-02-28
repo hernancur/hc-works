@@ -8,12 +8,12 @@ import Status from "@/app/Status/page";
 export default function Projects() {
   const { hoveredStates, enterCard, leaveCard } = useHovered();
   return (
-    <div className="">
+    <div className="min-h-screen grid grid-cols-1 md:grid-cols-2 gap-4 ">
       {projectsFrontPage.map((each, i) => (
-        <div key={i}>
-          <div className="flex flex-col lg:flex-row  gap-x-8 my-6">
+        <div key={i} className="flex flex-col">
+          <div className="flex flex-col lg:flex-row gap-x-8 my-6">
             <div
-              className="h-60 w-full md:w-64 relative"
+              className="relative h-60 w-full md:w-64"
               onMouseEnter={() => enterCard(i)}
               onMouseLeave={() => leaveCard(i)}
               style={{ transition: "transform 0.2s ease-in-out" }}
@@ -63,7 +63,7 @@ export default function Projects() {
                     style={{ transition: "transform 0.2s ease-in-out" }}
                     className="mt-8 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 w-full bg-white dark:bg-neutral-800/10 text-sm dark:text-neutral-400 font-semibold shadow-md   hover:scale-110 "
                   >
-                    Visit 
+                    Visit
                   </button>
                 </Link>
                 {each.video && (
@@ -79,7 +79,7 @@ export default function Projects() {
               </div>
             </div>
           </div>
-          <div className="border my-16 border-neutral-300 dark:border-neutral-800  h-[1px]" />
+          <div className="my-6" />
         </div>
       ))}
     </div>
