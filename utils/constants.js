@@ -56,15 +56,15 @@ export const projectsFrontPage = [
     title: "Therapist website | Freelance",
     subT: "We attend 24/7 to potential clients giving information about massage services, opinions, schedules and contact. We'll also add a payment method in the future.",
   },
-  {
-    status: null,
-    link: "https://mascotopia.vercel.app/",
-    year: 2023,
-    imgLink: "/img/mascotopia1.jpg",
-    imgLink2: "/img/mascotopia2.jpg",
-    title: "Mascotopia | Project Manager & Developer",
-    subT: "As a two team members, we made and offer a solution for lost/found pets driven by AI with Intelligent image recognition and virtual assistant on any needs/doubts you may have.",
-  },
+  // {
+  //   status: null,
+  //   link: "https://mascotopia.vercel.app/",
+  //   year: 2023,
+  //   imgLink: "/img/mascotopia1.jpg",
+  //   imgLink2: "/img/mascotopia2.jpg",
+  //   title: "Mascotopia | Project Manager & Developer",
+  //   subT: "As a two team members, we made and offer a solution for lost/found pets driven by AI with Intelligent image recognition and virtual assistant on any needs/doubts you may have.",
+  // },
   {
     status: null,
     link: "https://owlfurnitureandobjects.com/",
@@ -203,6 +203,64 @@ export const techStack = [
     href: "https://www.typescriptlang.org/",
   },
   {
+    name: "Terraform",
+    icon: "/icons/terraform.png",
+    href: "https://www.terraform.io/",
+  },
+  {
+    name: "Nest",
+    icon: "/icons/nest.webp",
+    href: "https://nestjs.com/",
+  },
+  {
+    name: "SQS",
+    icon: "/icons/awsnaranja.png",
+    href: "https://aws.amazon.com/es/sqs/",
+  },
+  {
+    name: "SNS",
+    icon: "/icons/awsnaranja.png",
+    href: "https://aws.amazon.com/es/sns/",
+  },
+  {
+    name: "LAMBDA",
+    icon: "/icons/aws.png",
+    href: "https://aws.amazon.com/es/pm/lambda/",
+  },
+
+  {
+    name: "Docker",
+    icon: "/icons/docker.png",
+    href: "https://www.docker.com/",
+  },
+  {
+    name: "Node",
+    icon: "/icons/node.png",
+    href: "https://nodejs.org/es/docs/",
+  },
+
+  {
+    name: "Express",
+    icon: "/icons/expressjs.png",
+    href: "https://expressjs.com/es/",
+  },
+
+  {
+    name: "SQL",
+    icon: "/icons/sql.png",
+    href: "https://www.w3schools.com/sql/",
+  },
+  {
+    name: "Sequelize",
+    icon: "/icons/seq.png",
+    href: "https://sequelize.org/",
+  },
+  {
+    name: "Prisma",
+    icon: "/icons/prisma.png",
+    href: "https://www.prisma.io/docs",
+  },
+  {
     name: "HTML",
     icon: "/icons/html.png",
     href: "https://developer.mozilla.org/es/docs/Web/HTML",
@@ -243,33 +301,7 @@ export const techStack = [
     icon: "/icons/ps.png",
     href: "https://www.adobe.com/es/products/photoshop.html",
   },
-  {
-    name: "Node",
-    icon: "/icons/node.png",
-    href: "https://nodejs.org/es/docs/",
-  },
 
-  {
-    name: "Express",
-    icon: "/icons/expressjs.png",
-    href: "https://expressjs.com/es/",
-  },
-
-  {
-    name: "SQL",
-    icon: "/icons/sql.png",
-    href: "https://www.w3schools.com/sql/",
-  },
-  {
-    name: "Sequelize",
-    icon: "/icons/seq.png",
-    href: "https://sequelize.org/",
-  },
-  {
-    name: "Prisma",
-    icon: "/icons/prisma.png",
-    href: "https://www.prisma.io/docs",
-  },
   {
     name: "GoogleCloud",
     icon: "/icons/googleCloud.png",
@@ -301,11 +333,6 @@ export const techStack = [
     href: "https://www.google.com/intl/es/sheets/about/",
   },
   {
-    name: "Scrum",
-    icon: "/icons/scrum.png",
-    href: "https://www.scrum.org/",
-  },
-  {
     name: "Jira",
     icon: "/icons/jira.png",
     href: "https://www.atlassian.com/es/software/jira",
@@ -314,23 +341,8 @@ export const techStack = [
 
 export const techLearning = [
   {
-    name: "Nest",
-    icon: "/icons/nest.webp",
-    href: "https://nestjs.com/",
-  },
-  {
-    name: "SNS",
-    icon: "/icons/aws.png",
-    href: "https://aws.amazon.com/es/sns/",
-  },
-  {
-    name: "LAMBDA",
-    icon: "/icons/awsnaranja.png",
-    href: "https://aws.amazon.com/es/pm/lambda/",
-  },
-  {
-    name: "Docker",
-    icon: "/icons/docker.png",
-    href: "https://www.docker.com/",
+    name: "Commerce\nTools",
+    icon: "/icons/commercetools.png",
+    href: "https://commercetools.com/",
   },
 ];
